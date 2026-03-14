@@ -8,11 +8,6 @@ export const LINKSONE: LINK[] = [
         value: "Home"
     },
     {
-        id: 2,
-        link: "/inner/pricing",
-        value: "Pricing"
-    },
-    {
         id: 3,
         link: "/inner/about",
         value: "About"
@@ -44,11 +39,11 @@ export const LINKSTWO: LINK[] = [
         link: "/inner/contact",
         value: "Contact Us"
     },
-    {
-        id: 4,
-        link: "/404",
-        value: "404 Page"
-    },
+    // {
+    //     id: 4,
+    //     link: "/404",
+    //     value: "404 Page"
+    // },
     {
         id: 5,
         link: "/inner/contact",
@@ -59,27 +54,12 @@ export const LINKSTWO: LINK[] = [
 export const LINKTHREE: LINK[] = [
     {
         id: 1,
-        link: "/inner/product-details",
-        value: "Products Design"
+        link: "/inner/quantity-surveying",
+        value: "Quantity Surveying Practical Class"
     },
     {
         id: 2,
-        link: "/inner/web-design-development",
-        value: "Web Application"
-    },
-    {
-        id: 3,
-        link: "/inner/digital-marketing",
-        value: "Digital Marketing"
-    },
-    {
-        id: 4,
-        link: "/inner/design-and-branding",
-        value: "UI/UX Design"
-    },
-    {
-        id: 5,
-        link: "/inner/services",
-        value: "More Services"
+        link: "/inner/rics-coaching",
+        value: "RICS Coaching Class"
     },
 ]

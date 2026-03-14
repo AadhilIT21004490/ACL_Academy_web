@@ -2,11 +2,11 @@ import type { LINK, NavItemSingle } from "../footer/footerType";
 
 export const HOME_LINKS: LINK[] = [
     { id: 1, link: "/", value: "Home One" },
-    { id: 2, link: "/index2", value: "Home Two" },
-    { id: 3, link: "/index3", value: "Home Three" },
-    { id: 4, link: "/index-one-page", value: "Home One / Onepage" },
-    { id: 5, link: "/index2-one-page", value: "Home Two / Onepage" },
-    { id: 6, link: "/index3-one-page", value: "Home Three / Onepage" },
+    // { id: 2, link: "/index2", value: "Home Two" },
+    // { id: 3, link: "/index3", value: "Home Three" },
+    // { id: 4, link: "/index-one-page", value: "Home One / Onepage" },
+    // { id: 5, link: "/index2-one-page", value: "Home Two / Onepage" },
+    // { id: 6, link: "/index3-one-page", value: "Home Three / Onepage" },
 ];
 
 
@@ -28,23 +28,24 @@ export const PAGES_LINKS: LINK[] = [
 //  Services Menu
 export const SERVICES_LINKS: LINK[] = [
     { id: 1, link: "/inner/services", value: "Services" },
-    { id: 2, link: "/inner/digital-marketing", value: "Digital Marketing" },
-    { id: 3, link: "/inner/web-design-development", value: "Web Design & Development" },
-    { id: 4, link: "/inner/search-engine-optimization", value: "Search Engine Optimization" },
-    { id: 5, link: "/inner/design-and-branding", value: "Design & Branding" },
-    { id: 6, link: "/inner/app-development", value: "App Development" },
+    { id: 2, link: "/inner/quantity-surveying", value: "Quantity Surveying Practical Class" },
+    { id: 3, link: "/inner/rics-coaching", value: "RICS Coaching Class" },
+    // { id: 3, link: "/inner/web-design-development", value: "Web Design & Development" },
+    // { id: 4, link: "/inner/search-engine-optimization", value: "Search Engine Optimization" },
+    // { id: 5, link: "/inner/design-and-branding", value: "Design & Branding" },
+    // { id: 6, link: "/inner/app-development", value: "App Development" },
 ];
 
 //  Shop Menu
-export const SHOP_LINKS: LINK[] = [
-    { id: 1, link: "/inner/products", value: "Products" },
-    { id: 2, link: "/inner/product-details", value: "Product Details" },
-    { id: 3, link: "/inner/cart", value: "Cart" },
-    { id: 4, link: "/inner/checkout", value: "Checkout" },
-    { id: 5, link: "/inner/wishlist", value: "Wishlist" },
-    { id: 6, link: "/inner/sign-up", value: "Sign Up" },
-    { id: 7, link: "/inner/login", value: "Login" },
-];
+// export const SHOP_LINKS: LINK[] = [
+//     { id: 1, link: "/inner/products", value: "Products" },
+//     { id: 2, link: "/inner/product-details", value: "Product Details" },
+//     { id: 3, link: "/inner/cart", value: "Cart" },
+//     { id: 4, link: "/inner/checkout", value: "Checkout" },
+//     { id: 5, link: "/inner/wishlist", value: "Wishlist" },
+//     { id: 6, link: "/inner/sign-up", value: "Sign Up" },
+//     { id: 7, link: "/inner/login", value: "Login" },
+// ];
 
 //  Blog Menu
 export const BLOG_LINKS: LINK[] = [

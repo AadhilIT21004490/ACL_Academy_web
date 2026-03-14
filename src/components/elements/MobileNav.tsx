@@ -1,11 +1,11 @@
 "use client"
 import React, { useState } from 'react';
-import logo from "../../../public/assets/images/resources/logo-2.png";
+import logo from "../../../public/assets/images/lg.png";
 import { motion } from "framer-motion"
 import { useFinrisContext } from '../context/useFinrisContext';
 import Link from 'next/link';
 import Image from 'next/image';
-import { BLOG_LINKS, HOME_LINKS, navItemsSingle, PAGES_LINKS, SERVICES_LINKS, SHOP_LINKS } from '@/contents/nav/nav';
+import { BLOG_LINKS, HOME_LINKS, navItemsSingle, PAGES_LINKS, SERVICES_LINKS} from '@/contents/nav/nav';
 import { NavItemSingle } from '@/contents/footer/footerType';
 import { usePathname } from 'next/navigation';
 const MobileNav: React.FC = () => {
@@ -192,30 +192,6 @@ const MobileNav: React.FC = () => {
                                     </motion.li>)
                                 }
 
-                            </ul>
-                        </li>
-
-                        <li className="dropdown">
-                            <Link href="#">
-                                <span className={`${isShopOpen ? 'hoverColor' : ''}`}>Shop</span>
-                                <button onClick={() => setIsShopOpen(pre => !pre)} type="button" className={`${isShopOpen ? 'expanded' : ''}`}>
-                                    <i className='fa fa-angle-down '></i>
-                                </button>
-                            </Link>
-                            <ul style={{ display: `${!isShopOpen ? 'none' : 'block'}` }}>
-                                {
-                                    SHOP_LINKS.map(Item => <motion.li
-                                        initial={{ x: -70, opacity: 0 }}
-                                        whileInView={{ x: 0, opacity: 1 }}
-                                        transition={{
-                                            duration: 0.1 * Item?.id,
-                                            ease: "easeOut"
-                                        }}
-                                        viewport={{ amount: 0.01, once: true }}
-                                        key={Item?.id}  >
-                                        <Link href={Item?.link} onClick={closeMobileState}>{Item?.value}</Link>
-                                    </motion.li>)
-                                }
                             </ul>
                         </li>
 

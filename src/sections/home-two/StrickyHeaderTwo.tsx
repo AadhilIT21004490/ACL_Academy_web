@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import logo2 from '../../../public/assets/images/resources/logo-2.png';
+import logo2 from '../../../public/assets/images/lg.png';
 import { useFinrisContext } from '@/components/context/useFinrisContext';
 import Link from 'next/link';
 import ManuList from '../manu-item/ManuList';
@@ -48,7 +48,7 @@ const StrickyHeaderTwo: React.FC = () => {
                                 <div className="main-menu-two__call-content">
                                     <p className="main-menu-two__call-sub-title">Call Anytime</p>
                                     <h5 className="main-menu-two__call-number">
-                                        <a href="tel:9288006780">+92 ( 8800 ) - 6780</a>
+                                        <a href="tel:9288006780">+92 1234 - 4567</a>
                                     </h5>
                                 </div>
                             </div>

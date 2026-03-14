@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import ManuList from '../manu-item/ManuList';
-import logo2 from '../../../public/assets/images/resources/logo-2.png';
+import logo2 from '../../../public/assets/images/lg.png';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useFinrisContext } from '@/components/context/useFinrisContext';
@@ -60,7 +60,7 @@ const HeaderTwo: React.FC = () => {
                         <div className="main-menu-two__left">
                             <div className="main-menu-two__logo">
                                 <Link href="/">
-                                    <Image src={logo2} width={117} height={29} alt="Logo" />
+                                    <Image src={logo2} width={200} alt="Logo" />
                                 </Link>
                             </div>
                         </div>

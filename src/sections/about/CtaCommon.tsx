@@ -1,5 +1,5 @@
 import React from 'react';
-import catImg from "../../../public/assets/images/resources/cta-one-img-1.png";
+import catImg from "../../../public/assets/images/cont.png";
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -13,7 +13,7 @@ const CtaCommon: React.FC = () => {
                     </div>
                     <div className="cta-one__inner-content">
                         <div className="cta-one__shape-bg" ></div>
-                        <h3 className="cta-one__title">Start your journey with our <br /> exceptional services.</h3>
+                        <h3 className="cta-one__title">Start your journey with our <br /> Mentorship.</h3>
                         <div className="cta-one__btn">
                             <Link href="/inner/contact">Get Started <span className=" icon-right-arrow-1"></span></Link>
                         </div>

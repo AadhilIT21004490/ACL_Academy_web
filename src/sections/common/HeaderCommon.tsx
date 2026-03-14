@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import logo2 from '../../../public/assets/images/resources/logo-2.png';
+import logo2 from '../../../public/assets/images/lg.png';
 import { useFinrisContext } from '@/components/context/useFinrisContext';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -26,7 +26,7 @@ const HeaderCommon: React.FC = () => {
                                 <i className="icon-envelope"></i>
                             </div>
                             <div className="text">
-                                <p><a href="mailto:info@Finris24.com">info@Finris24.com</a></p>
+                                <p><a href="mailto:info@Finris24.com">info.aclacademy@gmail.com</a></p>
                             </div>
                         </li>
                         <li>
@@ -34,11 +34,11 @@ const HeaderCommon: React.FC = () => {
                                 <i className="icon-pin"></i>
                             </div>
                             <div className="text">
-                                <p>4124 Cimmaron Road, CA 92806</p>
+                                <p>Srilanka</p>
                             </div>
                         </li>
                     </ul>
-                    <p className="main-menu-two__top-welcome-text">Welcome to Our business Agency</p>
+                    {/* <p className="main-menu-two__top-welcome-text">Welcome to Our business Agency</p> */}
                     <div className="main-menu-two__top-right">
                         <div className="main-menu-two__top-time">
                             <div className="main-menu-two__top-time-icon">
@@ -47,9 +47,8 @@ const HeaderCommon: React.FC = () => {
                             <p className="main-menu-two__top-text">Mon - Fri: 09:00 - 05:00</p>
                         </div>
                         <div className="main-menu-two__social">
-                            <a href="#"><i className="fab fa-twitter"></i></a>
+                            <a href="#"><i className="fab fa-whatsapp"></i></a>
                             <a href="#"><i className="fab fa-facebook"></i></a>
-                            <a href="#"><i className="fab fa-pinterest-p"></i></a>
                             <a href="#"><i className="fab fa-instagram"></i></a>
                         </div>
                     </div>
@@ -61,7 +60,7 @@ const HeaderCommon: React.FC = () => {
                         <div className="main-menu-two__left">
                             <div className="main-menu-two__logo">
                                 <Link href="/">
-                                    <Image src={logo2} width={117} height={29} alt="Logo" />
+                                    <Image src={logo2} width={200} alt="Logo" />
                                 </Link>
                             </div>
                         </div>
@@ -77,20 +76,11 @@ const HeaderCommon: React.FC = () => {
                                 <div className="main-menu-two__call-content">
                                     <p className="main-menu-two__call-sub-title">Call Anytime</p>
                                     <h5 className="main-menu-two__call-number">
-                                        <a href="tel:9288006780">+92 ( 8800 ) - 6780</a>
+                                        <a href="tel:9288006780">+92 1234 - 4567</a>
                                     </h5>
                                 </div>
                             </div>
-                            <div className="main-menu-two__search-cart-box">
-                                <div className="main-menu-two__search-cart-box">
-                                    <div className="main-menu-two__search-box" onClick={() => setIsSearch(pre => !pre)}>
-                                        <span className="main-menu-two__search searcher-toggler-box icon-search-1"></span>
-                                    </div>
-                                    <div className="main-menu-two__cart-box">
-                                        <Link href="/inner/cart" className="main-menu-two__cart icon-shopping-cart"></Link>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div className="main-menu-two__btn-box">
                                 <Link href="/inner/contact" className="thm-btn thm-btn-two main-menu-two__btn">
                                     Contact us

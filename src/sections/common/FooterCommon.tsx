@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import { motion } from "framer-motion"
-import footerLogo from '../../../public/assets/images/resources/logo-2.png';
+import footerLogo from '../../../public/assets/images/lg.png';
 import shapeStar from '../../../public/assets/images/shapes/site-footer-two-star.png';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -17,13 +17,13 @@ const FooterCommon: React.FC = () => {
     return (
         <>
             <section className="newsletter-two">
-                <div className="newsletter-two__big-text">Subscribe Newsletter</div>
+                <div className="newsletter-two__big-text">Lets Talk!!</div>
                 <div className="container">
                     <div className="newsletter-two__inner">
                         <div className="newsletter-two__left">
-                            <h2 className="newsletter-two__title">Subscribe Newsletter</h2>
+                            <h2 className="newsletter-two__title">Lets Talk!</h2>
                             <p className="newsletter-two__text">
-                                Get the latest SEO tips and software insights straight to your <br /> inbox. Stay informed.
+                                Get in tough with us<br /> for more updates.
                             </p>
                         </div>
                         <div className="newsletter-two__right">
@@ -32,7 +32,7 @@ const FooterCommon: React.FC = () => {
                                     <input type="text" placeholder="Enter Your Email" required />
                                 </div>
                                 <button type="button" className="newsletter-two__btn">
-                                    Subscribe
+                                    Text Here
                                 </button>
                             </form>
                         </div>
@@ -61,7 +61,7 @@ const FooterCommon: React.FC = () => {
                                         <div className="footer-widget-two__about">
                                             <div className="footer-widget-two__about-logo">
                                                 <Link href="/">
-                                                    <Image src={footerLogo} width={117} height={29} loading="lazy" alt="Footer Logo" />
+                                                    <Image src={footerLogo} width={200} loading="lazy" alt="Footer Logo" />
                                                 </Link>
                                             </div>
                                             <ul className="footer-widget-two__get-in-touch-list list-unstyled">
@@ -71,7 +71,7 @@ const FooterCommon: React.FC = () => {
                                                     </div>
                                                     <div className="text">
                                                         <p>
-                                                            123 Main Street, Apt 4B <br /> New York, NY 10001 USA
+                                                            Sri Lanka
                                                         </p>
                                                     </div>
                                                 </li>
@@ -81,7 +81,7 @@ const FooterCommon: React.FC = () => {
                                                     </div>
                                                     <div className="text">
                                                         <p>
-                                                            <a href="mailto:support@domain.com">support@domain.com</a>
+                                                            <a href="mailto:support@domain.com">info.aclacademy@gmail.com</a>
                                                         </p>
                                                     </div>
                                                 </li>
@@ -91,7 +91,7 @@ const FooterCommon: React.FC = () => {
                                                     </div>
                                                     <div className="text">
                                                         <p>
-                                                            <a href="tel:001234568900">+00 (123) 456 8900</a>
+                                                            <a href="tel:001234568900">+94 (123) 456 8900</a>
                                                         </p>
                                                     </div>
                                                 </li>
@@ -103,13 +103,7 @@ const FooterCommon: React.FC = () => {
                                                         <i className="icon-facebook"></i>
                                                     </Link>
                                                     <Link href="#">
-                                                        <i className="icon-twitter"></i>
-                                                    </Link>
-                                                    <Link href="#">
                                                         <i className="icon-linkedin"></i>
-                                                    </Link>
-                                                    <Link href="#">
-                                                        <i className="icon-pinterest"></i>
                                                     </Link>
                                                 </div>
                                             </div>

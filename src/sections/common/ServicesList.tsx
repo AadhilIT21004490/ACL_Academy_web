@@ -9,11 +9,8 @@ interface Service {
     link: string;
 }
 const services: Service[] = [
-    { name: "Digital Marketing", link: "/inner/digital-marketing" },
-    { name: "Web Design & Development", link: "/inner/web-design-development" },
-    { name: "Search Engine Optimization", link: "/inner/search-engine-optimization" },
-    { name: "Design & Branding", link: "/inner/design-and-branding" },
-    { name: "App Development", link: "/inner/app-development" },
+    { name: "Quantity Surveying Practical Class", link: "/inner/quantity-surveying" },
+    { name: "RICS Coaching Class", link: "/inner/rics-coaching" }
 ]
 const ServicesList: React.FC = () => {
     const PathName = usePathname();
