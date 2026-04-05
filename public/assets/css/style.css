@@ -442,6 +442,16 @@ ul {
   margin: 21px 0 0;
 }
 
+.section-title-two__title-about {
+  color: var(--finris-black);
+  font-size: 40px;
+  line-height: 1.3em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 21px 0 0;
+  padding-bottom: 21px;
+}
+
 .section-title-two__title span {
   color: var(--finris-base);
   position: relative;

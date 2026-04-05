@@ -28,20 +28,17 @@ const WhyChooseA: React.FC = () => {
                                         <div className="section-title-two__tagline-icon-2"></div>
                                     </div>
                                     <span className="section-title-two__tagline">
-                                        Why Choose Us
+                                        Vision & Mission
                                     </span>
                                 </div>
-                                <h2 className="section-title-two__title title-animation">
-                                    <TextAnimation text='Why you should choose us' textColor='black' isSpan={false} />
-                                    <TextAnimation text='for your business needs.' isSpan={false} textColor='#6232F8' />
-
-                                </h2>
+                                <h3 className="section-title-two__title title-animation">
+                                    <TextAnimation text='Aligning industry standards' textColor='black' isSpan={false} />
+                                    <TextAnimation text='with practical excellence.' isSpan={false} textColor='#6232F8' />
+                                </h3>
                             </div>
 
                             <p className="why-choose-four__text">
-                                A summary is a concise overview of the main points or key
-                                details of a <br /> larger piece of content. Here’s a general
-                                guide for writing a summary:
+                                <strong>Our Vision is</strong> To become a leading global platform that transforms built environment professionals by integrating real industry practice with advanced digital and AI-driven solutions.
                             </p>
 
                             {/* Images */}
@@ -62,8 +59,9 @@ const WhyChooseA: React.FC = () => {
                     {/* RIGHT SIDE */}
                     <div className="col-xl-6">
                         <div className="why-choose-four__right">
-                            <h2 className="why-choose-four__right-title">
-                                100% SUCCESS RATE
+                            <h2 className="section-title-two__title-about title-animation">
+                                    <TextAnimation text='Our' textColor='black' isSpan={false} />
+                                    <TextAnimation text='Mission' isSpan={false} textColor='#6232F8' />
                             </h2>
 
                             <div className="row">
