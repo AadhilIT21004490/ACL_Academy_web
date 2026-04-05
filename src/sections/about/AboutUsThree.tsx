@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
-import aboutImg1 from "../../../public/assets/images/resources/about-three-img-1.jpg"
-import aboutImg2 from "../../../public/assets/images/resources/about-three-img-2.jpg"
+import aboutImg1 from "../../../public/assets/images/resources/abt1.jpg"
+import aboutImg2 from "../../../public/assets/images/resources/abt2.jpg"
 import aboutImg3 from "../../../public/assets/images/shapes/about-three-shape-5.png"
 import aboutImg4 from "../../../public/assets/images/resources/about-three-client-img.jpg"
 import aboutImg5 from "../../../public/assets/images/icon/about-three-points-icon-1.png"
@@ -118,27 +118,15 @@ const AboutUsThree: React.FC = () => {
                   </p>
                 </div> */}
                 <ul className="about-three__points-list list-unstyled">
-                  <li>
-                    <div className="icon">
-                      <Image src={aboutImg5} width={60} height={60} alt="" />
-                    </div>
-                    <div className="content">
-                      <h3>Advanced Security</h3>
-                      <p>
-                        Our system incorporates the latest security protocols to
-                        protect user data and ensure privacy.
-                      </p>
-                    </div>
-                  </li>
+                  
                   <li>
                     <div className="icon">
                       <Image src={aboutImg6} width={60} height={60} alt="" />
                     </div>
                     <div className="content">
-                      <h3>Customizable Options</h3>
+                      <h3>At ACL Academy..</h3>
                       <p>
-                        Our system incorporates the latest security protocols to
-                        protect user data and ensure privacy.
+                        At ACL Academy, we don’t just train individuals — we develop built environment professionals ready to deliver in real-world projects from day one.
                       </p>
                     </div>
                   </li>
