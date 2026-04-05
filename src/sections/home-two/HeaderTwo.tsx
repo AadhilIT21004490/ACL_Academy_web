@@ -18,7 +18,7 @@ const HeaderTwo: React.FC = () => {
                                 <i className="icon-phone"></i>
                             </div>
                             <div className="text">
-                                <p><a href="tel:15502505260">+1 (550) 250 5260</a></p>
+                                <p><a href="tel:966555091734">+966 5550 91734</a></p>
                             </div>
                         </li>
                         <li>
@@ -76,7 +76,7 @@ const HeaderTwo: React.FC = () => {
                                 <div className="main-menu-two__call-content">
                                     <p className="main-menu-two__call-sub-title">Call Anytime</p>
                                     <h5 className="main-menu-two__call-number">
-                                        <a href="tel:9288006780">+94 1234 - 5678</a>
+                                        <a href="tel:966555091734">+966 5550 91734</a>
                                     </h5>
                                 </div>
                             </div>

@@ -48,20 +48,11 @@ const StrickyHeaderTwo: React.FC = () => {
                                 <div className="main-menu-two__call-content">
                                     <p className="main-menu-two__call-sub-title">Call Anytime</p>
                                     <h5 className="main-menu-two__call-number">
-                                        <a href="tel:9288006780">+92 1234 - 4567</a>
+                                        <a href="tel:966555091734">+966 5550 91734</a>
                                     </h5>
                                 </div>
                             </div>
-                            <div className="main-menu-two__search-cart-box">
-                                <div className="main-menu-two__search-cart-box">
-                                    <div className="main-menu-two__search-box" onClick={() => setIsSearch(pre => !pre)}>
-                                        <span className="main-menu-two__search searcher-toggler-box icon-search-1"></span>
-                                    </div>
-                                    <div className="main-menu-two__cart-box">
-                                        <Link href="/inner/cart" className="main-menu-two__cart icon-shopping-cart"></Link>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div className="main-menu-two__btn-box">
                                 <Link href="/inner/contact" className="thm-btn thm-btn-two main-menu-two__btn">
                                     Contact us

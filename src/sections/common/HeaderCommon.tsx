@@ -76,7 +76,7 @@ const HeaderCommon: React.FC = () => {
                                 <div className="main-menu-two__call-content">
                                     <p className="main-menu-two__call-sub-title">Call Anytime</p>
                                     <h5 className="main-menu-two__call-number">
-                                        <a href="tel:9288006780">+92 1234 - 4567</a>
+                                        <a href="tel:966555091734">+966 5550 91734</a>
                                     </h5>
                                 </div>
                             </div>
