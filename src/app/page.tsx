@@ -1,4 +1,7 @@
 
+import CounterA from '@/sections/common/CounterA';
+import FooterCommon from '@/sections/common/FooterCommon';
+import TestimonialsA from '@/sections/common/TestimonialsA';
 import AboutTwo from '@/sections/home-two/AboutTwo';
 import BannerTwo from '@/sections/home-two/BannerTwo';
 import BlogTwo from '@/sections/home-two/BlogTwo';
@@ -22,14 +25,14 @@ const page: React.FC = () => {
             <AboutTwo />
             <ServiceTwo />
             <WhyChooseTwo />
-            <CounterTwo />
+            <CounterA />
             <ProcessTwo />
             <SlidingTextTwo />
-            <PortfolioTwo />
-            <TeamTwo />
-            <TestimonialsTwo />
+            {/* <PortfolioTwo /> */}
+            {/* <TeamTwo /> */}
+            <TestimonialsA />
             <BlogTwo />
-            <FooterTwo />
+            <FooterCommon />
             <StrickyHeaderTwo />
         </div>
   );

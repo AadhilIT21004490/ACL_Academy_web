@@ -4,7 +4,7 @@ import React from 'react';
 import Marquee from 'react-fast-marquee';
 
 const SlidingTextTwo: React.FC = () => {
-    const textItems = Array.from({ length: 50 }, () => 'PORTFOLIO');
+    const textItems = Array.from({ length: 50 }, () => 'ACL ACADEMY');
 
     return (
         <section className="sliding-text-two mt50">

@@ -4,7 +4,7 @@ import TextAnimation from '@/components/elements/TextAnimation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from "framer-motion"
-import aboutTwoImg1 from '../../../public/assets/images/resources/about-two-img-1.jpg';
+import aboutTwoImg1 from '../../../public/assets/images/her.jpg';
 import aboutTwoIcon1 from '../../../public/assets/images/icon/about-two-icon-1.png';
 import aboutTwoIcon2 from '../../../public/assets/images/icon/about-two-icon-2.png';
 import aboutTwoIcon3 from '../../../public/assets/images/icon/about-two-icon-3.png';
@@ -41,11 +41,12 @@ const AboutTwo: React.FC = () => {
                                         <div className="section-title-two__tagline-icon-1"></div>
                                         <div className="section-title-two__tagline-icon-2"></div>
                                     </div>
-                                    <span className="section-title-two__tagline">About Us</span>
+                                    <span className="section-title-two__tagline">What We Offer</span>
                                 </div>
                                 <h2 className="section-title-two__title title-animation">
-                                    <TextAnimation text='Our creative agency is the' fontSize='42' textColor='black' isSpan={false} />
-                                    <TextAnimation text='perfect partner for elevating your brand.' fontSize='42' textColor='#6232F8' isSpan={false} />
+                                    <TextAnimation text='Real-World Skills for the ' fontSize='42' textColor='black' isSpan={false} />
+                                    <TextAnimation text='Modern Built Environment.' fontSize='42' textColor='#6232F8' isSpan={false} />
+                                     
 
                                 </h2>
                             </div>
@@ -60,10 +61,7 @@ const AboutTwo: React.FC = () => {
                     <div className="col-xl-7">
                         <div className="about-two__right">
                             <p className="about-two__text">
-                                Our agency specializes in creative solutions tailored to elevate your brand,
-                                ensuring it stands out and connects with your audience effectively. We are
-                                dedicated to bringing that story to life through innovative and impactful
-                                design, marketing, and branding solutions.
+                                We provide practical, industry-focused training across the built environment, designed to prepare professionals for real-world project delivery
                             </p>
 
                             <div className="about-two__points-box">
@@ -73,10 +71,9 @@ const AboutTwo: React.FC = () => {
                                             <Image src={aboutTwoIcon1} width={40} height={40} alt="Innovative Strategies" />
                                         </div>
                                         <div className="content">
-                                            <h3>Innovative Strategies</h3>
+                                            <h3>Built Environment Practice</h3>
                                             <p>
-                                                We develop fresh, out-of-the-box ideas tailored to your
-                                                brands unique identity.
+                                                Hands-on training in cost management, project delivery, and commercial processes based on real projects.
                                             </p>
                                         </div>
                                     </li>
@@ -86,10 +83,9 @@ const AboutTwo: React.FC = () => {
                                             <Image src={aboutTwoIcon2} width={40} height={40} alt="Visual Design Excellence" />
                                         </div>
                                         <div className="content">
-                                            <h3>Visual Design Excellence</h3>
+                                            <h3>AI & Digital Integration</h3>
                                             <p>
-                                                Deliver stunning visuals that captivate and reflect your
-                                                brands essence.
+                                                Learn how Artificial Intelligence and modern tools are transforming construction and project workflows.
                                             </p>
                                         </div>
                                     </li>
@@ -101,10 +97,9 @@ const AboutTwo: React.FC = () => {
                                             <Image src={aboutTwoIcon3} width={40} height={40} alt="Brand Storytelling" />
                                         </div>
                                         <div className="content">
-                                            <h3>Brand Storytelling</h3>
+                                            <h3>Career Acceleration</h3>
                                             <p>
-                                                Craft compelling narratives that resonate with your
-                                                audience and build lasting connections.
+                                                Focused training to help you secure opportunities in the Middle East and global markets.
                                             </p>
                                         </div>
                                     </li>
@@ -114,10 +109,9 @@ const AboutTwo: React.FC = () => {
                                             <Image src={aboutTwoIcon4} width={40} height={40} alt="Cross-Platform Expertise" />
                                         </div>
                                         <div className="content">
-                                            <h3>Cross-Platform Expertise</h3>
+                                            <h3>Chartered Mentorship</h3>
                                             <p>
-                                                Seamlessly integrate your brand across digital and
-                                                traditional platforms for maximum impact.
+                                                Expert guidance for MRICS and APC candidates, focusing on global standards, ethics, and professional competencies.
                                             </p>
                                         </div>
                                     </li>
@@ -139,7 +133,7 @@ const AboutTwo: React.FC = () => {
                                         <div className="about-two__call-content">
                                             <p className="about-two__call-sub-title">Connect us</p>
                                             <h3 className="about-two__call-number">
-                                                <a href="tel:02123456789">+02 (123) 456789</a>
+                                                <a href="tel:966555091734">+966 5550 91734</a>
                                             </h3>
                                         </div>
                                     </div>

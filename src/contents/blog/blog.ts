@@ -1,7 +1,7 @@
 
-import blogPostImg1 from '../../../public/assets/images/blog/blog-2-1.jpg';
-import blogPostImg2 from '../../../public/assets/images/blog/blog-2-2.jpg';
-import blogPostImg3 from '../../../public/assets/images/blog/blog-2-3.jpg';
+import blogPostImg1 from '../../../public/assets/images/blog/mrics.jpg';
+import blogPostImg2 from '../../../public/assets/images/blog/qs.jpg';
+import blogPostImg3 from '../../../public/assets/images/blog/ai.jpg';
 import type { BlogCarouselItem, BlogOnePost, BlogPage, BlogPost, BlogsListItem } from './blogType';
 import blogImg1 from "../../../public/assets/images/blog/blog-2-1.jpg"
 import blogImg2 from "../../../public/assets/images/blog/blog-2-2.jpg"
@@ -30,6 +30,35 @@ import userImg1 from "../../../public/assets/images/blog/blog-one-user-1-1.jpg";
 import userImg2 from "../../../public/assets/images/blog/blog-one-user-1-2.jpg";
 import userImg3 from "../../../public/assets/images/blog/blog-one-user-1-3.jpg";
 
+export const courses: BlogPost[] = [
+    {
+        id: 1,
+        image: blogPostImg2,
+        date: 'August 20, 2025',
+        tags: ['QS', '★', 'Tender evaluation'],
+        title: `QS Practice Classes`,
+        text: 'Master the art of quantity surveying with our practical courses. Gain hands-on experience in cost management, project delivery, and commercial processes based on real projects.',
+        link: '/inner/quantity-surveying',
+    },
+    {
+        id: 2,
+        image: blogPostImg1,
+        date: 'March 15, 2025',
+        tags: ['MRICS', '★', 'Membership preparation'],
+        title: 'MRICS Membership Coaching Classes',
+        text: "Prepare for MRICS membership with our comprehensive coaching classes. providing you with the knowledge and skills needed to succeed in your professional journey.",
+        link: '/inner/rics-coaching',
+    },
+    {
+        id: 3,
+        image: blogPostImg3,
+        date: 'July 10, 2025',
+        tags: ['Ai', '★', 'Ai Agents'],
+        title: 'Ai x QS: Revolutionizing Quantity Surveying with Artificial Intelligence',
+        text: 'Discover how AI is transforming quantity surveying with our practical courses. Learn cost management, project delivery, and commercial processes based on real projects.',
+        link: '/inner/ai-classes',
+    },
+];
 
 export const blogPosts: BlogPost[] = [
     {

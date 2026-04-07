@@ -1,22 +1,23 @@
-import React from 'react';
-import ctaImg from '../../../public/assets/images/resources/cta-one-img-1.png';
-import ctaBg from '../../../public/assets/images/shapes/cta-one-shape-bg.png';
-import whyChooseBg from '../../../public/assets/images/shapes/why-choose-two-shape-bg.png';
-import whyChooseStar from '../../../public/assets/images/shapes/why-choose-two-star.png';
-import reviewShape from '../../../public/assets/images/shapes/why-choose-two-review-shape-1.png';
-import whyChooseImg from '../../../public/assets/images/resources/why-choose-two-img-1.png';
-import pointIcon1 from '../../../public/assets/images/icon/why-choose-two-point-icon-1.png';
-import pointIcon2 from '../../../public/assets/images/icon/why-choose-two-point-icon-2.png';
-import Link from 'next/link';
-import Image from 'next/image';
-import AdvanceCountUp from '@/components/elements/AdvanceCountUp';
-import TextAnimation from '@/components/elements/TextAnimation';
+import React from "react";
+import ctaImg from "../../../public/assets/images/resources/cta-one-img-1.png";
+import ctaBg from "../../../public/assets/images/shapes/cta-one-shape-bg.png";
+import whyChooseBg from "../../../public/assets/images/shapes/why-choose-two-shape-bg.png";
+import whyChooseStar from "../../../public/assets/images/shapes/why-choose-two-star.png";
+import reviewShape from "../../../public/assets/images/shapes/why-choose-two-review-shape-1.png";
+import whyChooseImg from "../../../public/assets/images/resources/why.jpg";
+import pointIcon1 from "../../../public/assets/images/icon/why-choose-two-point-icon-1.png";
+import pointIcon2 from "../../../public/assets/images/icon/why-choose-two-point-icon-2.png";
+import Link from "next/link";
+import Image from "next/image";
+import AdvanceCountUp from "@/components/elements/AdvanceCountUp";
+import TextAnimation from "@/components/elements/TextAnimation";
+import CtaCommon from "../about/CtaCommon";
 
 const WhyChooseTwo: React.FC = () => {
-    return (
-        <>
-            {/* CTA Section */}
-            <section className="cta-one">
+  return (
+    <>
+      {/* CTA Section */}
+      {/* <section className="cta-one">
                 <div className="container">
                     <div className="cta-one__inner">
                         <div className="cta-one__img">
@@ -36,23 +37,26 @@ const WhyChooseTwo: React.FC = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
+      <CtaCommon />
 
-            {/* Why Choose Section */}
-            <section className="why-choose-two">
-                <div
-                    className="why-choose-two__shape-bg" style={{ backgroundImage: `url(${whyChooseBg})` }} ></div>
+      {/* Why Choose Section */}
+      <section className="why-choose-two">
+        <div
+          className="why-choose-two__shape-bg"
+          style={{ backgroundImage: `url(${whyChooseBg})` }}
+        ></div>
 
-                <div className="why-choose-two__star zoominout">
-                    <Image src={whyChooseStar} width={66} height={66} alt="Star shape" />
-                </div>
+        <div className="why-choose-two__star zoominout">
+          <Image src={whyChooseStar} width={66} height={66} alt="Star shape" />
+        </div>
 
-                <div className="container">
-                    <div className="row">
-                        {/* Left Side */}
-                        <div className="col-xl-5">
-                            <div className="why-choose-two__left">
-                                <div className="why-choose-two__review">
+        <div className="container">
+          <div className="row">
+            {/* Left Side */}
+            <div className="col-xl-5">
+              <div className="why-choose-two__left">
+                {/* <div className="why-choose-two__review">
                                     <div className="why-choose-two__review-shape">
                                         <Image src={reviewShape} width={59} height={17} alt="Review shape" />
                                     </div>
@@ -65,113 +69,192 @@ const WhyChooseTwo: React.FC = () => {
                                         </div>
                                         <p className="why-choose-two__review-count-text">Reviews</p>
                                     </div>
-                                </div>
+                                </div> */}
 
-                                <div className="why-choose-two__rating">
-                                    <div className="why-choose-two__rating-count count-box">
-                                        <p className="count-text" >
-                                            <AdvanceCountUp ending={20} />
-                                        </p>
-                                        <span className="why-choose-two__rating-count-letter">m</span>
-                                    </div>
+                <div className="why-choose-two__rating">
+                  <div className="why-choose-two__rating-count count-box">
+                    <p className="count-text">
+                      <AdvanceCountUp ending={86} />
+                    </p>
+                    <span className="why-choose-two__rating-count-letter">
+                      +
+                    </span>
+                  </div>
 
-                                    <div className="why-choose-two__rating-content">
-                                        <form className="why-choose-two__star-rating">
-                                            <input type="radio" id="3-stars" name="rating" value="3" />
-                                            <label htmlFor="3-stars" className="star">
-                                                &#9733;
-                                            </label>
-                                            <input type="radio" id="2-stars" name="rating" value="2" />
-                                            <label htmlFor="2-stars" className="star">
-                                                &#9733;
-                                            </label>
-                                            <input type="radio" id="1-star" name="rating" value="1" />
-                                            <label htmlFor="1-star" className="star">
-                                                &#9733;
-                                            </label>
-                                        </form>
-                                        <p className="why-choose-two__rating-text">Average Rating</p>
-                                    </div>
-                                </div>
-
-                                <div className="why-choose-two__img-box">
-                                    <div className="why-choose-two__img">
-                                        <Image src={whyChooseImg} width={520} height={500} alt="Why choose us" />
-                                        <div className="why-choose-two__shape-box">
-                                            <div className="why-choose-two__shape-1">
-                                                <div className="why-choose-two__shape-2"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Right Side */}
-                        <div className="col-xl-7">
-                            <div className="why-choose-two__right">
-                                <div className="section-title-two text-left sec-title-animation animation-style2">
-                                    <div className="section-title-two__tagline-box">
-                                        <div className="section-title-two__tagline-icon-box">
-                                            <div className="section-title-two__tagline-icon-1"></div>
-                                            <div className="section-title-two__tagline-icon-2"></div>
-                                        </div>
-                                        <span className="section-title-two__tagline">Why Choose Us</span>
-                                    </div>
-                                    <h2 className="section-title-two__title title-animation">
-                                        <TextAnimation text='Enhance your success with our' textColor='black' isSpan={false} />
-                                        <TextAnimation text='premium services.' textColor='#6232F8' isSpan={false} />
-
-                                    </h2>
-                                </div>
-
-                                <p className="why-choose-two__text">
-                                    Explore how our exceptional services can help you reach your goals and
-                                    thrive. We offer practical solutions and expert guidance to elevate your
-                                    business and drive growth.
-                                </p>
-
-                                <ul className="list-unstyled why-choose-two__points">
-                                    <li>
-                                        <div className="icon">
-                                            <Image src={pointIcon1} width={32} height={32} alt="Tailored Solutions" />
-                                        </div>
-                                        <div className="content">
-                                            <h4>
-                                                <Link href="/inner/about">
-                                                    Tailored Solutions for Optimal Results
-                                                </Link>
-                                            </h4>
-                                            <p>
-                                                Our premium services offer bespoke solutions designed to meet
-                                                your unique needs.
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="icon">
-                                            <Image src={pointIcon2} width={32} height={32} alt="Expert Insights" />
-                                        </div>
-                                        <div className="content">
-                                            <h4>
-                                                <Link href="/inner/about">
-                                                    Exclusive Access to Expert Insights
-                                                </Link>
-                                            </h4>
-                                            <p>
-                                                As a premium client, you gain access to our top-tier experts
-                                                and cutting-edge resources.
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                  <div className="why-choose-two__rating-content">
+                    <form className="why-choose-two__star-rating">
+                      <input
+                        type="radio"
+                        id="3-stars"
+                        name="rating"
+                        value="3"
+                      />
+                      <label htmlFor="3-stars" className="star">
+                        &#9733;
+                      </label>
+                      <input
+                        type="radio"
+                        id="2-stars"
+                        name="rating"
+                        value="2"
+                      />
+                      <label htmlFor="2-stars" className="star">
+                        &#9733;
+                      </label>
+                      <input type="radio" id="1-star" name="rating" value="1" />
+                      <label htmlFor="1-star" className="star">
+                        &#9733;
+                      </label>
+                      <input type="radio" id="1-star" name="rating" value="1" />
+                      <label htmlFor="1-star" className="star">
+                        &#9733;
+                      </label>
+                    </form>
+                    <p className="why-choose-two__rating-text">
+                      Average Rating
+                    </p>
+                  </div>
                 </div>
-            </section>
-        </>
-    );
+
+                <div className="why-choose-two__img-box">
+                  <div className="why-choose-two__img">
+                    <Image
+                      src={whyChooseImg}
+                      width={520}
+                      height={500}
+                      alt="Why choose us"
+                    />
+                    <div className="why-choose-two__shape-box">
+                      <div className="why-choose-two__shape-1">
+                        <div className="why-choose-two__shape-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side */}
+            <div className="col-xl-7">
+              <div className="why-choose-two__right">
+                <div className="section-title-two text-left sec-title-animation animation-style2">
+                  <div className="section-title-two__tagline-box">
+                    <div className="section-title-two__tagline-icon-box">
+                      <div className="section-title-two__tagline-icon-1"></div>
+                      <div className="section-title-two__tagline-icon-2"></div>
+                    </div>
+                    <span className="section-title-two__tagline">
+                      Why Choose us
+                    </span>
+                  </div>
+                  <h2 className="section-title-two__title title-animation">
+                    <TextAnimation
+                      text="Why Choose ACL Academy?"
+                      textColor="black"
+                      isSpan={false}
+                    />
+                    {/* <TextAnimation text='ACL Academy?' textColor='#6232F8' isSpan={false} /> */}
+                  </h2>
+                </div>
+
+                <p className="why-choose-two__text">
+                  At ACL Academy, we are dedicated to providing exceptional
+                  education and training in the built environment. Our
+                  comprehensive programs are designed to equip students with the
+                  skills and knowledge needed to excel in their careers. With a
+                  focus on real-world applications and industry-relevant
+                  content, we prepare our students to meet the demands of the
+                  modern workforce. Our experienced instructors,
+                  state-of-the-art facilities, and commitment to student success
+                  make us the ideal choice for those seeking a rewarding
+                  education in the built environment.
+                </p>
+
+                {/* <ul className="list-unstyled why-choose-two__points">
+                  <li>
+                      <Image
+                        src={pointIcon1}
+                        width={32}
+                        height={32}
+                        alt="Tailored Solutions"
+                      />
+                    <div className="content">
+                      <h4>
+                        <Link href="/inner/about">
+                           Learn in a real commercial environment simulation
+                        </Link>
+                      </h4>
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                        src={pointIcon1}
+                        width={32}
+                        height={32}
+                        alt="Tailored Solutions"
+                      />
+                    <div className="content">
+                      <h4>
+                        <Link href="/inner/about">
+                          Training based on actual project workflows 
+                        </Link>
+                      </h4>
+                    </div>
+                  </li>
+                  <li>
+                      <Image
+                        src={pointIcon1}
+                        width={32}
+                        height={32}
+                        alt="Tailored Solutions"
+                      />
+                    <div className="content">
+                      <h4>
+                        <Link href="/inner/about">
+                           Focus on practical skills, not just theory
+                        </Link>
+                      </h4>
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                        src={pointIcon1}
+                        width={32}
+                        height={32}
+                        alt="Tailored Solutions"
+                      />
+                    <div className="content">
+                      <h4>
+                        <Link href="/inner/about">
+                          Exposure to AI and digital transformation 
+                        </Link>
+                      </h4>
+                    </div>
+                  </li>
+                  <li>
+                    <Image
+                        src={pointIcon1}
+                        width={32}
+                        height={32}
+                        alt="Tailored Solutions"
+                      />
+                    <div className="content">
+                      <h4>
+                        <Link href="/inner/about">
+                           Led by industry professionals with global experience 
+                        </Link>
+                      </h4>
+                    </div>
+                  </li>
+
+                </ul> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default WhyChooseTwo;

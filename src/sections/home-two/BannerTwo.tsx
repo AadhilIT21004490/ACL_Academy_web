@@ -19,7 +19,9 @@ interface BannerSliderItem {
     id: number;
     title: string;
     titleHighlight: string;
+    titleHighlight2: string;
     description: string;
+    description2: string;
     buttonText: string;
     buttonLink: string;
     happyClients: number;
@@ -28,33 +30,39 @@ interface BannerSliderItem {
 const sliderItems: BannerSliderItem[] = [
     {
         id: 1,
-        title: 'Simple Solutions',
-        titleHighlight: 'Your Business Success',
-        description: 'We provide expert business consultancy services, offering strategic insights and tailored solutions to drive growth, improve efficiency, and navigate challenges.',
+        title: 'Ai-Driven Learning for Career Success',
+        titleHighlight: 'Build Your Career in the Built Environment',
+        titleHighlight2: 'with Real Industry Skills & AI-Driven Learning',
+        description: 'Practical training designed to simulate real project environments ',
+        description2: 'combining industry expertise, digital tools, and AI to prepare you for global opportunities.',
         buttonText: 'Get Started',
         buttonLink: '/inner/contact',
-        happyClients: 2000,
-        positiveRating: 30
+        happyClients: 86,
+        positiveRating: 98
     },
     {
         id: 2,
-        title: 'Simple Solutions',
-        titleHighlight: 'Your Business Success',
-        description: 'We provide expert business consultancy services, offering strategic insights and tailored solutions to drive growth, improve efficiency, and navigate challenges.',
+        title: 'Quantity Surveying Expertise for Your Business Success',
+        titleHighlight: 'From Learning to Real Projects',
+        titleHighlight2: 'Transform Your Future in the Built Environment',
+        description: 'Master the built environment through practical, AI-driven simulations ',
+        description2: 'that turn theory into real-world expertise.Move beyond the textbook and build your career on a foundation of professional, industry-ready experience.',
         buttonText: 'Get Started',
         buttonLink: '/inner/contact',
-        happyClients: 3000,
-        positiveRating: 25,
+        happyClients: 86,
+        positiveRating: 98,
     },
     {
         id: 3,
-        title: 'Simple Solutions',
-        titleHighlight: 'Your Business Success',
-        description: 'We provide expert business consultancy services, offering strategic insights and tailored solutions to drive growth, improve efficiency, and navigate challenges.',
+        title: 'MRICS',
+        titleHighlight: 'MRICS Excellence: ',
+        titleHighlight2: 'Professional Guidance for the Built Environment',
+        description: 'Elevate your professional standing with mentorship that turns complex theory into Chartered ',
+        description2: 'excellence. Gain specialized support in cost management, project delivery, and ethics to meet global RICS standards.',
         buttonText: 'Get Started',
         buttonLink: '/inner/contact',
-        happyClients: 4000,
-        positiveRating: 35
+        happyClients: 86,
+        positiveRating: 98
     }
 ];
 
@@ -99,30 +107,26 @@ const BannerTwo: React.FC = () => {
                         >
                             <div className={`item ${index === activeIndex ? "active" : ""}`}>
                                 <div className="main-slider__img-box">
-                                    <div className="main-slider__img">
+                                    {/* <div className="main-slider__img">
                                         <Image src={sliderImg} width={630} height={734} loading="eager" alt="" />
                                         <div className="main-slider__img-shape-box ">
                                             <div className="main-slider__img-shape-1">
                                                 <div className="main-slider__img-shape-2"></div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="container">
                                     <div className="main-slider__content">
                                         <div className="main-slider__title-box">
-                                            <h2 className="main-slider__title">Simple Solutions <br /> for <span>Your Business <br />
-                                                Success</span></h2>
-                                            <div className="main-slider__btn">
-                                                <Link href="/inner/contact"><span className="icon-right"></span>Get Started</Link>
-                                            </div>
+                                            <h3 className="main-slider__title">{item.titleHighlight} <span>{item.titleHighlight2}</span></h3>
                                         </div>
-                                        <p className="main-slider__text">We provide expert business consultancy services,
-                                            offering strategic <br /> insights and tailored solutions to drive growth, improve
-                                            efficiency, <br /> and navigate challenges.</p>
+                                           
+                                        <p className="main-slider__text">{item.description}<br />{item.description2}</p>
+                                        
                                         <div className="main-slider__satisfied-client-and-rating-box">
                                             <div className="main-slider__satisfied-client-box">
-                                                <ul className="list-unstyled main-slider__satisfied-client-list">
+                                                {/* <ul className="list-unstyled main-slider__satisfied-client-list">
                                                     <li>
                                                         <div className="main-slider__satisfied-client-img">
                                                             <Image src={clientImg1} width={42} height={42} alt="" />
@@ -133,30 +137,33 @@ const BannerTwo: React.FC = () => {
                                                             <Image src={clientImg2} width={42} height={42} alt="" />
                                                         </div>
                                                     </li>
-                                                </ul>
+                                                </ul> */}
                                                 <div className="main-slider__satisfied-client-content">
                                                     <div className="main-slider__satisfied-client-count count-box">
                                                         <h4 className="count-text" ><AdvanceCountUp ending={item?.happyClients} /> </h4>
                                                         <span className="main-slider__satisfied-client-count-plus">+</span>
                                                     </div>
-                                                    <p className="main-slider__satisfied-client-count-text">Happy Clients </p>
+                                                    <p className="main-slider__satisfied-client-count-text">Students </p>
                                                 </div>
                                             </div>
                                             <div className="main-slider__rating-box">
                                                 <div className="main-slider__rating-count count-box">
                                                     <h3 className="count-text" ><AdvanceCountUp ending={item?.positiveRating} /> </h3>
-                                                    <span className="main-slider__satisfied-client-count-letter">k</span>
+                                                    <span className="main-slider__satisfied-client-count-letter">%</span>
                                                 </div>
                                                 <div className="main-slider__rating-content">
-                                                    <p className="main-slider__rating-content-sub-title">Positive Rating</p>
+                                                    <p className="main-slider__rating-content-sub-title">Success Rating</p>
                                                     <div className="main-slider__rating-content-logo">
-                                                        <Image src={ratingLogo} width={44} height={16} alt="" />
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                     </div>
+                                    
                                 </div>
+                                
                             </div>
                         </SwiperSlide>
                     ))}

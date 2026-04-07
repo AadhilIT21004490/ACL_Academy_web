@@ -14,36 +14,36 @@ import icon4 from "../../../public/assets/images/icon/process-one-icon-4.png";
 export const processData: ProcessItem[] = [
     {
         id: 1,
-        title: 'Strategic Analysis',
+        title: 'Technical Mastery',
         description:
-            'The focus is on aligning the company’s vision with actionable plans, ensuring sustainable growth.',
+            'Master core competencies in cost management, procurement, and contract administration through real project data.',
         icon: processIcon1,
         shape: processShape1.src,
         animation: 'fadeInLeft',
     },
     {
         id: 2,
-        title: 'Business Optimization',
+        title: 'Digital Transformation',
         description:
-            'This process is dedicated to enhancing overall business efficiency and effectiveness.',
+            'Implement AI and modern digital workflows to automate tasks and enhance project delivery efficiency.',
         icon: processIcon2,
         shape: processShape2.src,
         animation: 'fadeInRight',
     },
     {
         id: 3,
-        title: 'Market Research',
+        title: 'Commercial Simulation',
         description:
-            'This includes exploring new markets, product diversification, and leveraging innovation to drive business.',
+            'Navigate real-world commercial scenarios and project challenges to develop high-level strategic decision-making skills.',
         icon: processIcon3,
         shape: processShape1.src,
         animation: 'fadeInLeft',
     },
     {
         id: 4,
-        title: 'Operational Efficiency',
+        title: 'Career Strategy',
         description:
-            'By enhancing operational efficiency, businesses can achieve better performance.',
+            'Optimize your professional profile and interview performance to secure roles in competitive global markets.',
         icon: processIcon4,
         shape: processShape2.src,
         animation: 'fadeInRight',

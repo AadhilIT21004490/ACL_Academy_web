@@ -25,11 +25,11 @@ const ProcessTwo: React.FC = () => {
                             <div className="section-title-two__tagline-icon-1"></div>
                             <div className="section-title-two__tagline-icon-2"></div>
                         </div>
-                        <span className="section-title-two__tagline">Working Process</span>
+                        <span className="section-title-two__tagline">how it works</span>
                     </div>
                     <h2 className="section-title-two__title title-animation">
-                        <TextAnimation text='We use the most effective' textColor='black' isSpan={false} />
-                        <TextAnimation text='methods to build a brand' textColor='#6232F8' isSpan={false} />
+                        <TextAnimation text='The Path to Professional Practice' textColor='black' isSpan={false} />
+                        <TextAnimation text='Strategic Career Evolution' textColor='#6232F8' isSpan={false} />
                     </h2>
                 </div>
                 <div className="process-two__inner">

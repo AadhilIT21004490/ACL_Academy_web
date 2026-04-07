@@ -37,14 +37,7 @@ export const servicesTow: ServicesTow[] = [
         description:
             'We produce compelling content and dynamic video marketing campaigns that engage and convert.',
     },
-    {
-        id: 4,
-        icon: serviceIcon4,
-        title: 'Digital Marketing & Ads Campaign',
-        link: '/inner/digital-marketing',
-        description:
-            'We design targeted digital marketing strategies and ad campaigns that deliver measurable results.',
-    },
+    
 ];
 
 

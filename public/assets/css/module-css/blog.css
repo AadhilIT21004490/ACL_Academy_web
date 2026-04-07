@@ -2061,12 +2061,11 @@
 }
 
 /*--------------------------------------------------------------
-# Blog Carousel Page
+# Blog Carousel Page - Padding removed for better design
 --------------------------------------------------------------*/
 .blog-carousel-page {
     position: relative;
     display: block;
-    padding: 120px 0 170px;
 }
 
 .blog-carousel-page .blog-two__single {

@@ -271,7 +271,7 @@
 .why-choose-two {
     position: relative;
     display: block;
-    padding: 120px 0 0;
+    padding: 15px 0 0;
     overflow: hidden;
     z-index: 1;
 }
@@ -510,8 +510,7 @@
 .why-choose-two__points {
     position: relative;
     display: block;
-    margin-top: 38px;
-    margin-left: 110px;
+    margin-top: 20px;
 }
 
 .why-choose-two__points li {
@@ -523,7 +522,7 @@
 }
 
 .why-choose-two__points li+li {
-    margin-top: 34px;
+    margin-top: 15px;
 }
 
 .why-choose-two__points li .icon {

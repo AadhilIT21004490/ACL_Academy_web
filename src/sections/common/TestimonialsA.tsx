@@ -5,11 +5,25 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import { testimonialsPage } from '@/contents/testimonials/testimonials';
 import { TestimonialPage } from '@/contents/testimonials/type';
+import TextAnimation from '@/components/elements/TextAnimation';
 
 const TestimonialsA: React.FC = () => {
     return (
         <section className="testimonial-carousel-page">
             <div className="container">
+                <div className="section-title-two text-center sec-title-animation animation-style1">
+                    <div className="section-title-two__tagline-box justify-content-center">
+                        <div className="section-title-two__tagline-icon-box">
+                            <div className="section-title-two__tagline-icon-1"></div>
+                            <div className="section-title-two__tagline-icon-2"></div>
+                        </div>
+                        <span className="section-title-two__tagline">Testimonials</span>
+                    </div>
+                    <h2 className="section-title-two__title title-animation">
+                        <TextAnimation text='What students say' textColor='black' isSpan={false} />
+                        <TextAnimation text='about us' textColor='#6232F8' isSpan={false} />
+                    </h2>
+                </div>
                 <div className="testimonial-carousel-style owl-carousel owl-theme carousel-dot-style">
                     <Swiper
                         slidesPerView={3}

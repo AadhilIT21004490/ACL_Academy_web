@@ -38,7 +38,6 @@ const HeaderTwo: React.FC = () => {
                             </div>
                         </li>
                     </ul>
-                    {/* <p className="main-menu-two__top-welcome-text">Welcome to Our business Agency</p> */}
                     <div className="main-menu-two__top-right">
                         <div className="main-menu-two__top-time">
                             <div className="main-menu-two__top-time-icon">

@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { useFinrisContext } from '../context/useFinrisContext';
 import Link from 'next/link';
 import Image from 'next/image';
-import { BLOG_LINKS, HOME_LINKS, navItemsSingle, PAGES_LINKS, SERVICES_LINKS} from '@/contents/nav/nav';
+import { BLOG_LINKS, HOME_LINKS, navItemsSingle, SERVICES_LINKS} from '@/contents/nav/nav';
 import { NavItemSingle } from '@/contents/footer/footerType';
 import { usePathname } from 'next/navigation';
 const MobileNav: React.FC = () => {
@@ -83,11 +83,11 @@ const MobileNav: React.FC = () => {
                 <ul className="mobile-nav__contact list-unstyled">
                     <li>
                         <i className="fa fa-envelope"></i>
-                        <Link href="mailto:needhelp@finris.com">needhelp@finris.com</Link>
+                        <Link href="mailto:info.aclacademy@gmail.com">info.aclacademy@gmail.com</Link>
                     </li>
                     <li>
                         <i className="fas fa-phone"></i>
-                        <Link href="tel:666-888-0000">666 888 0000</Link>
+                        <Link href="tel:966555091734">+966 5550 91734</Link>
                     </li>
                 </ul>
                 <div className="mobile-nav__top">
@@ -120,7 +120,7 @@ const MobileNav: React.FC = () => {
                 {/* ======= NAV MENU ======= */}
                 <div className="mobile-nav__container">
                     <ul className="main-menu__list">
-                        <li className="dropdown">
+                        {/* <li className="dropdown">
                             <Link href="#">
                                 <span className={`${isHomeOpen ? 'hoverColor' : ''}`}>Home</span>
                                 <button onClick={() => setIsHomeOpen(!isHomeOpen)} type="button" className={`${isHomeOpen ? 'expanded' : ''}`}>
@@ -142,11 +142,15 @@ const MobileNav: React.FC = () => {
                                     </motion.li>)
                                 }
                             </ul>
-                        </li>
+                        </li> */}
+                        <li><Link onClick={closeMobileState} href="/#">Home</Link></li>
+
 
                         <li><Link onClick={closeMobileState} href="/about">About</Link></li>
 
-                        <li className="dropdown">
+                        {/* --- MOBILE MENU PAGES LINKS HIDDEN --- */}
+
+                        {/* <li className="dropdown">
                             <Link href="#">
                                 <span className={`${isPageOpen ? 'hoverColor' : ''}`}>Pages</span>
                                 <button onClick={() => setIsPagesOpen(!isPageOpen)} type="button" className={`${isPageOpen ? 'expanded' : ''}`}>
@@ -168,11 +172,11 @@ const MobileNav: React.FC = () => {
                                     </motion.li>)
                                 }
                             </ul>
-                        </li>
+                        </li> */}
 
                         <li className="dropdown">
                             <Link href="#">
-                                <span className={`${isServiceOpen ? 'hoverColor' : ''}`}>Services</span>
+                                <span className={`${isServiceOpen ? 'hoverColor' : ''}`}>Courses</span>
                                 <button onClick={() => setIsServiceOpen(pre => !pre)} type="button" className={`${isServiceOpen ? 'expanded' : ''}`}>
                                     <i className='fa fa-angle-down '></i>
                                 </button>
@@ -227,11 +231,11 @@ const MobileNav: React.FC = () => {
                 <ul className="mobile-nav__contact list-unstyled">
                     <li>
                         <i className="fa fa-envelope"></i>
-                        <Link href="mailto:needhelp@finris.com">needhelp@finris.com</Link>
+                        <Link href="mailto:info.aclacademy@gmail.com">info.aclacademy@gmail.com</Link>
                     </li>
                     <li>
                         <i className="fas fa-phone"></i>
-                        <Link href="tel:666-888-0000">666 888 0000</Link>
+                        <Link href="tel:966555091734">+966 5550 91734</Link>
                     </li>
                 </ul>
 

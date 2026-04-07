@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { BLOG_LINKS, HOME_LINKS, PAGES_LINKS, SERVICES_LINKS} from '@/contents/nav/nav';
+import { BLOG_LINKS, HOME_LINKS, SERVICES_LINKS} from '@/contents/nav/nav';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -23,7 +23,7 @@ const ManuList: React.FC = () => {
             <li className={`${isCurrent(['/about']) ? 'current' : ''}`}>
                 <Link href="/inner/about">About</Link>
             </li>
-            <li className={`dropdown ${isCurrent(["/team", "/team-carousel", "/team-details", "/portfolio", "/portfolio-details", "/testimonials", "/testimonial-carousel", "/pricing", "/gallery", "/faq", "/coming-soon", "/404"]) ? 'current' : ''}`}>
+            {/* <li className={`dropdown ${isCurrent(["/team", "/team-carousel", "/team-details", "/portfolio", "/portfolio-details", "/testimonials", "/testimonial-carousel", "/pricing", "/gallery", "/faq", "/coming-soon", "/404"]) ? 'current' : ''}`}>
                 <a href="#">Pages</a>
                 <ul>
                     {
@@ -32,7 +32,7 @@ const ManuList: React.FC = () => {
                         </li>)
                     }
                 </ul>
-            </li>
+            </li> */}
             <li className={`dropdown ${isCurrent(["/services", "/digital-marketing", "/web-design-development", "/search-engine-optimization", "/design-and-branding", "/app-development"]) ? 'current' : ''}`}>
                 <a href="#">Courses</a>
                 <ul>

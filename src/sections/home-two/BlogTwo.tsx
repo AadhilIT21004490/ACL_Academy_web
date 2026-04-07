@@ -6,9 +6,50 @@ import shape1 from '../../../public/assets/images/shapes/blog-two-shape-1.png';
 import shape2 from '../../../public/assets/images/shapes/blog-two-shape-2.png';
 import Image from 'next/image';
 import TextAnimation from '@/components/elements/TextAnimation';
-import { blogPosts } from '@/contents/blog/blog';
 import { BlogPost } from '@/contents/blog/blogType';
 import Link from 'next/link';
+import blogPostImg1 from '../../../public/assets/images/posts/abt1.jpg';
+import blogPostImg2 from '../../../public/assets/images/posts/abt1.jpg';
+import blogPostImg3 from '../../../public/assets/images/posts/abt1.jpg';
+
+export const blogPosts: BlogPost[] = [
+    {
+        id: 1,
+        image: blogPostImg2,
+        date: 'August 20, 2025',
+        tags: ['Productivity', '★', 'Tech Innovation'],
+        title: `Future of Artificial Intelligence: What's Next in 2025?`,
+        text: 'As we move towards 2025, the landscape of artificial intelligence continues to evolve',
+        link: '/inner/blog-details',
+    },
+    {
+        id: 2,
+        image: blogPostImg1,
+        date: 'March 15, 2025',
+        tags: ['Technology', '★', 'Wellness'],
+        title: '5 Essential Wellness Tips for a Healthier Lifestyle',
+        text: "Achieving a healthier lifestyle doesn't have to be complicated.",
+        link: '/inner/blog-details',
+    },
+    {
+        id: 3,
+        image: blogPostImg3,
+        date: 'July 10, 2025',
+        tags: ['Sustainability', '★', 'Eco-Friendly'],
+        title: 'Sustainable Fashion: How to Build an Eco-Friendly Wardrobe',
+        text: 'This guide covers sustainable fabrics, ethical brands, and mindful shopping',
+        link: '/inner/blog-details',
+    },
+    {
+        id: 4,
+        image: blogPostImg1,
+        date: 'October 2, 2025',
+        tags: ['AI', '★', 'Innovation'],
+        title: 'The Power of Automation in Modern Business',
+        text: 'Automation is reshaping industries by improving efficiency and reducing costs.',
+        link: '/inner/blog-details',
+    },
+];
 
 const BlogTwo: React.FC = () => {
     return (
@@ -29,11 +70,11 @@ const BlogTwo: React.FC = () => {
                             <div className="section-title-two__tagline-icon-1"></div>
                             <div className="section-title-two__tagline-icon-2"></div>
                         </div>
-                        <span className="section-title-two__tagline">Articles</span>
+                        <span className="section-title-two__tagline">Webinar</span>
                     </div>
                     <h2 className="section-title-two__title title-animation">
-                        <TextAnimation text='Check out our articles to learn' textColor='black' isSpan={false} />
-                        <TextAnimation text={`more about business agencies.`} textColor='#6232F8' isSpan={false} />
+                        <TextAnimation text='Check out our webinars to learn' textColor='black' isSpan={false} />
+                        <TextAnimation text={`more about latest trends.`} textColor='#6232F8' isSpan={false} />
                     </h2>
                 </div>
 

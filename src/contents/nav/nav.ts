@@ -1,7 +1,7 @@
 import type { LINK, NavItemSingle } from "../footer/footerType";
 
 export const HOME_LINKS: LINK[] = [
-    { id: 1, link: "/", value: "Home One" },
+    { id: 1, link: "/", value: "Home" },
     // { id: 2, link: "/index2", value: "Home Two" },
     // { id: 3, link: "/index3", value: "Home Three" },
     // { id: 4, link: "/index-one-page", value: "Home One / Onepage" },
@@ -9,25 +9,26 @@ export const HOME_LINKS: LINK[] = [
     // { id: 6, link: "/index3-one-page", value: "Home Three / Onepage" },
 ];
 
+// --- NAV BAR PAGES LINKS HIDDEN ---
 
-export const PAGES_LINKS: LINK[] = [
-    { id: 1, link: "/inner/team", value: "Team" },
-    { id: 2, link: "/inner/team-carousel", value: "Team Carousel" },
-    { id: 3, link: "/inner/team-details", value: "Team Details" },
-    { id: 4, link: "/inner/portfolio", value: "Portfolio" },
-    { id: 5, link: "/inner/portfolio-details", value: "Portfolio Details" },
-    { id: 6, link: "/inner/testimonials", value: "Testimonials" },
-    { id: 7, link: "/inner/testimonial-carousel", value: "Testimonial Carousel" },
-    { id: 8, link: "/inner/pricing", value: "Pricing" },
-    { id: 9, link: "/inner/gallery", value: "Gallery" },
-    { id: 10, link: "/inner/faq", value: "FAQs" },
-    { id: 11, link: "/404", value: "404 Error" },
-    { id: 12, link: "/coming-soon", value: "Coming Soon" },
-];
+// export const PAGES_LINKS: LINK[] = [
+//     { id: 1, link: "/inner/team", value: "Team" },
+//     { id: 2, link: "/inner/team-carousel", value: "Team Carousel" },
+//     { id: 3, link: "/inner/team-details", value: "Team Details" },
+//     { id: 4, link: "/inner/portfolio", value: "Portfolio" },
+//     { id: 5, link: "/inner/portfolio-details", value: "Portfolio Details" },
+//     { id: 6, link: "/inner/testimonials", value: "Testimonials" },
+//     { id: 7, link: "/inner/testimonial-carousel", value: "Testimonial Carousel" },
+//     { id: 8, link: "/inner/pricing", value: "Pricing" },
+//     { id: 9, link: "/inner/gallery", value: "Gallery" },
+//     { id: 10, link: "/inner/faq", value: "FAQs" },
+//     { id: 11, link: "/404", value: "404 Error" },
+//     { id: 12, link: "/coming-soon", value: "Coming Soon" },
+// ];
 
 //  Services Menu
 export const SERVICES_LINKS: LINK[] = [
-    { id: 1, link: "/inner/services", value: "Services" },
+    // { id: 1, link: "/inner/services", value: "Services" },
     { id: 2, link: "/inner/quantity-surveying", value: "Quantity Surveying Practical Class" },
     { id: 3, link: "/inner/rics-coaching", value: "RICS Coaching Class" },
     // { id: 3, link: "/inner/web-design-development", value: "Web Design & Development" },
