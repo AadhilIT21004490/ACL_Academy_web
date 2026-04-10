@@ -37,7 +37,7 @@ export const courses: BlogPost[] = [
         date: 'August 20, 2025',
         tags: ['QS', '★', 'Tender evaluation'],
         title: `QS Practice Classes`,
-        text: 'Master the art of quantity surveying with our practical courses. Gain hands-on experience in cost management, project delivery, and commercial processes based on real projects.',
+        description: 'Master the art of quantity surveying with our practical courses. Gain hands-on experience in cost management, project delivery, and commercial processes based on real projects.',
         link: '/inner/quantity-surveying',
     },
     {
@@ -46,7 +46,7 @@ export const courses: BlogPost[] = [
         date: 'March 15, 2025',
         tags: ['MRICS', '★', 'Membership preparation'],
         title: 'MRICS Membership Coaching Classes',
-        text: "Prepare for MRICS membership with our comprehensive coaching classes. providing you with the knowledge and skills needed to succeed in your professional journey.",
+        description: "Prepare for MRICS membership with our comprehensive coaching classes. providing you with the knowledge and skills needed to succeed in your professional journey.",
         link: '/inner/rics-coaching',
     },
     {
@@ -55,7 +55,7 @@ export const courses: BlogPost[] = [
         date: 'July 10, 2025',
         tags: ['Ai', '★', 'Ai Agents'],
         title: 'Ai x QS: Revolutionizing Quantity Surveying with Artificial Intelligence',
-        text: 'Discover how AI is transforming quantity surveying with our practical courses. Learn cost management, project delivery, and commercial processes based on real projects.',
+        description: 'Discover how AI is transforming quantity surveying with our practical courses. Learn cost management, project delivery, and commercial processes based on real projects.',
         link: '/inner/ai-classes',
     },
 ];
@@ -67,7 +67,7 @@ export const blogPosts: BlogPost[] = [
         date: 'August 20, 2025',
         tags: ['Productivity', '★', 'Tech Innovation'],
         title: `Future of Artificial Intelligence: What's Next in 2025?`,
-        text: 'As we move towards 2025, the landscape of artificial intelligence continues to evolve',
+        description: 'As we move towards 2025, the landscape of artificial intelligence continues to evolve',
         link: '/inner/blog-details',
     },
     {
@@ -76,7 +76,7 @@ export const blogPosts: BlogPost[] = [
         date: 'March 15, 2025',
         tags: ['Technology', '★', 'Wellness'],
         title: '5 Essential Wellness Tips for a Healthier Lifestyle',
-        text: "Achieving a healthier lifestyle doesn't have to be complicated.",
+        description: "Achieving a healthier lifestyle doesn't have to be complicated.",
         link: '/inner/blog-details',
     },
     {
@@ -85,7 +85,7 @@ export const blogPosts: BlogPost[] = [
         date: 'July 10, 2025',
         tags: ['Sustainability', '★', 'Eco-Friendly'],
         title: 'Sustainable Fashion: How to Build an Eco-Friendly Wardrobe',
-        text: 'This guide covers sustainable fabrics, ethical brands, and mindful shopping',
+        description: 'This guide covers sustainable fabrics, ethical brands, and mindful shopping',
         link: '/inner/blog-details',
     },
     {
@@ -94,7 +94,7 @@ export const blogPosts: BlogPost[] = [
         date: 'October 2, 2025',
         tags: ['AI', '★', 'Innovation'],
         title: 'The Power of Automation in Modern Business',
-        text: 'Automation is reshaping industries by improving efficiency and reducing costs.',
+        description: 'Automation is reshaping industries by improving efficiency and reducing costs.',
         link: '/inner/blog-details',
     },
 ];
@@ -191,7 +191,7 @@ export const blogPostsThree: BlogPost[] = [
         date: 'August 20, 2025',
         tags: ['Productivity', '★', 'Tech Innovation'],
         title: `Future of Artificial Intelligence: What's Next in 2025?`,
-        text: 'As we move towards 2025, the landscape of artificial intelligence continues to evolve',
+        description: 'As we move towards 2025, the landscape of artificial intelligence continues to evolve',
         link: '/inner/blog-details',
     },
     {
@@ -200,7 +200,7 @@ export const blogPostsThree: BlogPost[] = [
         date: 'March 15, 2025',
         tags: ['Technology', '★', 'Wellness'],
         title: '5 Essential Wellness Tips for a Healthier Lifestyle',
-        text: "Achieving a healthier lifestyle doesn't have to be complicated.",
+        description: "Achieving a healthier lifestyle doesn't have to be complicated.",
         link: '/inner/blog-details',
     },
     {
@@ -209,7 +209,7 @@ export const blogPostsThree: BlogPost[] = [
         date: 'July 10, 2025',
         tags: ['Sustainability', '★', 'Eco-Friendly'],
         title: 'Sustainable Fashion: How to Build an Eco-Friendly Wardrobe',
-        text: 'This guide covers sustainable fabrics, ethical brands, and mindful shopping',
+        description: 'This guide covers sustainable fabrics, ethical brands, and mindful shopping',
         link: '/inner/blog-details',
     }
 ];
