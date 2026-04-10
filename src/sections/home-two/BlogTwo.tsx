@@ -19,7 +19,7 @@ export const blogPosts: BlogPost[] = [
         date: 'August 20, 2025',
         tags: ['Productivity', '★', 'Tech Innovation'],
         title: `Future of Artificial Intelligence: What's Next in 2025?`,
-        text: 'As we move towards 2025, the landscape of artificial intelligence continues to evolve',
+        description: 'As we move towards 2025, the landscape of artificial intelligence continues to evolve',
         link: '/inner/blog-details',
     },
     {
@@ -28,7 +28,7 @@ export const blogPosts: BlogPost[] = [
         date: 'March 15, 2025',
         tags: ['Technology', '★', 'Wellness'],
         title: '5 Essential Wellness Tips for a Healthier Lifestyle',
-        text: "Achieving a healthier lifestyle doesn't have to be complicated.",
+        description: "Achieving a healthier lifestyle doesn't have to be complicated.",
         link: '/inner/blog-details',
     },
     {
@@ -37,7 +37,7 @@ export const blogPosts: BlogPost[] = [
         date: 'July 10, 2025',
         tags: ['Sustainability', '★', 'Eco-Friendly'],
         title: 'Sustainable Fashion: How to Build an Eco-Friendly Wardrobe',
-        text: 'This guide covers sustainable fabrics, ethical brands, and mindful shopping',
+        description: 'This guide covers sustainable fabrics, ethical brands, and mindful shopping',
         link: '/inner/blog-details',
     },
     {
@@ -46,7 +46,7 @@ export const blogPosts: BlogPost[] = [
         date: 'October 2, 2025',
         tags: ['AI', '★', 'Innovation'],
         title: 'The Power of Automation in Modern Business',
-        text: 'Automation is reshaping industries by improving efficiency and reducing costs.',
+        description: 'Automation is reshaping industries by improving efficiency and reducing costs.',
         link: '/inner/blog-details',
     },
 ];
@@ -125,7 +125,7 @@ const BlogTwo: React.FC = () => {
                                             <h3 className="blog-two__title">
                                                 <Link href={post.link}>{post.title}</Link>
                                             </h3>
-                                            <p className="blog-two__text">{post.text}</p>
+                                            <p className="blog-two__text">{post.description}</p>
                                         </div>
                                         <div className="blog-two__read-more">
                                             <div className="blog-two__read-more-line"></div>

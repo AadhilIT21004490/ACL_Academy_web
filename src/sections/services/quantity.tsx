@@ -11,6 +11,7 @@ import Image from "next/image";
 import ProgressBarItem from "@/components/elements/Progresbar";
 import Link from "next/link";
 import ServicesList from "../common/ServicesList";
+import Module from "../modules/module";
 interface Skill {
     name: string;
     percent: number;
@@ -48,27 +49,19 @@ const DigitalMain: React.FC = () => {
                                     Through interactive classes, case studies, and practical exercises, participants develop strong analytical thinking and professional confidence required in contractor, consultant, and client-side roles.
                                 </p>
 
-                                <h3 className="services-details__title-2">Core Areas Covered in Our Quantity Surveying Training</h3>
-                                <p className="services-details__text-2">
-                                    Our Quantity Surveying Training covers essential skills in cost estimation, 
-                                    contract management, and project budgeting. It equips learners with practical 
-                                    knowledge to handle construction finances effectively. The program ensures readiness 
-                                    for real-world industry challenges with a strong technical foundation.
-                                </p>
-
+                                <h3 className="services-details__title-2">What Makes This Program Different</h3>
+                        
                                 {/* FEATURES LIST */}
                                 <div className="services-details__points-box">
                                     <ul className="services-details__points-list list-unstyled">
-                                        <li><span className="icon-check"></span> Quantity Surveying Fundamentals</li>
-                                        <li><span className="icon-check"></span> Quantity Take-Off & Cost Estimation</li>
-                                        <li><span className="icon-check"></span> Contract Administration</li>
-                                        <li><span className="icon-check"></span> Construction Cost Planning & Control</li>
+                                        <li><span className="icon-check"></span> Real project-based learning</li>
+                                        <li><span className="icon-check"></span> Company-style practical environment</li>
+                                        <li><span className="icon-check"></span> Hands-on exercises (not theory-based learning)</li>
                                     </ul>
 
                                     <ul className="services-details__points-list list-unstyled">
-                                        <li><span className="icon-check"></span> RICS Pathway & BIM Awareness</li>
-                                        <li><span className="icon-check"></span> Real Project Case Studies</li>
-                                        <li><span className="icon-check"></span> Professional Decision Making & Team Collaboration</li>
+                                        <li><span className="icon-check"></span> Group discussions & communication training</li>
+                                        <li><span className="icon-check"></span> Designed for Gulf / international standards</li>
                                     </ul>
                                 </div>
 
@@ -94,35 +87,11 @@ const DigitalMain: React.FC = () => {
                                 {/* PROGRESS SECTION */}
                                 <div className="services-details__progress-box">
                                     <div className="row">
-                                        <div className="col-xl-6 col-lg-6">
-                                            <div className="services-details__progress-left">
+                                        <div className="services-details__progress-left">
                                                 <h3 className="services-details__progress-left-title">
-                                                    Benefits of Our Program
+                                                    Program Modules
                                                 </h3>
-                                                <p className="services-details__progress-left-text">
-                                                    Our Quantity Surveying training offers practical, project-based 
-                                                    learning with real construction case studies, hands-on measurement, 
-                                                    and BOQ preparation. Interactive classes, group exercises, and 
-                                                    regular Q&A sessions ensure clarity and confidence while exploring 
-                                                    RICS pathways and BIM concepts. Students gain career guidance for 
-                                                    contractor, consultant, and client-side QS roles, along with live 
-                                                    mock interviews to sharpen job readiness. The program builds technical 
-                                                    expertise, communication skills, and professional confidence to thrive 
-                                                    in the construction industry.
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-xl-6 col-lg-6">
-                                            <div className="services-details__progress-right">
-                                                <ul className="services-details__progress-list list-unstyled">
-                                                    {
-                                                        skills.map((skill: Skill, index) => (
-                                                            <ProgressBarItem key={index} title={skill?.name} value={skill?.percent} />
-                                                        ))
-                                                    }
-                                                </ul>
-                                            </div>
+                                                <Module/>
                                         </div>
                                     </div>
                                 </div>

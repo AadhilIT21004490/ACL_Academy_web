@@ -90,18 +90,20 @@ const QSBanner: React.FC = () => {
                                 <div className="container">
                                     <div className="main-slider__content">
                                         <div className="main-slider__title-box">
-                                            <h2 className="main-slider__title">Quantity Surveying<br /> <span>Practical
+                                            <h2 className="main-slider__title">Quantity Surveying<br /> <span>Practice
                                                 Classes</span></h2>
+
                                         </div>
                                         <p className="main-slider__text">
-                                            Master Quantity Surveying with Real-World Industry Practice<br/> in ACL Academy</p>
+                                            At ACL Academy, this is not just a course, <br/>it’s a real company-style training environment designed to transform <br/>you into a practical Quantity Surveyor ready for the industry
+                                            in <br/> ACL Academy</p>
                                         
                                         <div className="main-slider__satisfied-client-and-rating-box">
                                             <div className="main-slider__satisfied-client-box">
                                                 
                                                 <div className="main-slider__satisfied-client-content">
                                                     <div className="main-slider__satisfied-client-count count-box">
-                                                        <h4 className="count-text" ><AdvanceCountUp ending={item?.happyClients} /> </h4>
+                                                        <h4 className="count-text" ><AdvanceCountUp ending={86} /> </h4>
                                                         <span className="main-slider__satisfied-client-count-plus">+</span>
                                                     </div>
                                                     <p className="main-slider__satisfied-client-count-text">Students </p>

@@ -9,8 +9,9 @@ interface Service {
     link: string;
 }
 const services: Service[] = [
-    { name: "Quantity Surveying Practical Class", link: "/inner/quantity-surveying" },
-    { name: "RICS Coaching Class", link: "/inner/rics-coaching" }
+    { name: "Quantity Surveying Practice Class", link: "/inner/quantity-surveying" },
+    { name: "RICS Coaching Class", link: "/inner/rics-coaching" },
+    { name: "Ai x QS", link: "/inner/ai-qs" },
 ]
 const ServicesList: React.FC = () => {
     const PathName = usePathname();
