@@ -74,7 +74,7 @@ const BlogThree: React.FC = () => {
                                         <h3 className="blog-two__title">
                                             <Link href={post.link}>{post.title}</Link>
                                         </h3>
-                                        <p className="blog-two__text">{post.text}</p>
+                                        <p className="blog-two__text">{post.description}</p>
                                     </div>
 
                                     <div className="blog-two__read-more">
