@@ -31,6 +31,7 @@ export const SERVICES_LINKS: LINK[] = [
     // { id: 1, link: "/inner/services", value: "Services" },
     { id: 2, link: "/inner/quantity-surveying", value: "Quantity Surveying Practical Class" },
     { id: 3, link: "/inner/rics-coaching", value: "RICS Coaching Class" },
+    { id: 4, link: "/inner/ai-qs", value: "Quantity Surveying + Ai" },
     // { id: 3, link: "/inner/web-design-development", value: "Web Design & Development" },
     // { id: 4, link: "/inner/search-engine-optimization", value: "Search Engine Optimization" },
     // { id: 5, link: "/inner/design-and-branding", value: "Design & Branding" },

@@ -32,7 +32,7 @@ const FooterCommon: React.FC = () => {
                                     <input type="text" placeholder="Enter Your Email" required />
                                 </div>
                                 <button type="button" className="newsletter-two__btn">
-                                    Text Here
+                                    Send
                                 </button>
                             </form>
                         </div>
