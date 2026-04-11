@@ -113,15 +113,6 @@ const TeamDetailsMain: React.FC = () => {
                         With a strong background in digital marketing, brand management, and data-driven decision-making, Sarah
                         excels in creating innovative campaigns that resonate with target audiences and deliver measurable results.
                     </p>
-
-                    {/* Progress Bars */}
-                    <div className="team-details__progress-box">
-                        <ul className="team-details__progress-list list-unstyled">
-                            {skills.map((skill: Skill, index) => (
-                                <ProgressBarItem key={index} title={skill?.name} value={skill?.percent} />
-                            ))}
-                        </ul>
-                    </div>
                 </div>
             </div>
         </section>

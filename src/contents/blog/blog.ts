@@ -56,7 +56,7 @@ export const courses: BlogPost[] = [
         tags: ['Ai', '★', 'Ai Agents'],
         title: 'Ai x QS: Revolutionizing Quantity Surveying with Artificial Intelligence',
         description: 'Discover how AI is transforming quantity surveying with our practical courses. Learn cost management, project delivery, and commercial processes based on real projects.',
-        link: '/inner/ai-classes',
+        link: '/inner/ai-qs',
     },
 ];
 
