@@ -16,6 +16,7 @@ import StrickyHeaderTwo from '@/sections/home-two/StrickyHeaderTwo';
 import TeamTwo from '@/sections/home-two/TeamTwo';
 import TestimonialsTwo from '@/sections/home-two/TestimonialsTwo';
 import WhyChooseTwo from '@/sections/home-two/WhyChooseTwo';
+import TeamCarouselMain from '@/sections/team/TeamCarouselMain';
 import React from 'react';
 const page: React.FC = () => {
   return (
@@ -31,6 +32,7 @@ const page: React.FC = () => {
             {/* <PortfolioTwo /> */}
             {/* <TeamTwo /> */}
             <TestimonialsA />
+            <TeamCarouselMain/>
             <BlogTwo />
             <FooterCommon />
             <StrickyHeaderTwo />

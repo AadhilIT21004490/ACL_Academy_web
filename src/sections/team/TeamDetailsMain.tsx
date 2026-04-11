@@ -12,11 +12,6 @@ interface InfoItem {
     link?: string;
 }
 
-interface Skill {
-    name: string;
-    percent: number;
-}
-
 const infoList: InfoItem[] = [
     { label: "Location", value: "Florida, New York" },
     { label: "Phone", link: "tel:12345678910", value: "+12 345 6789 10" },
@@ -24,12 +19,6 @@ const infoList: InfoItem[] = [
     { label: "Education", value: "Masters of Ui Degree" },
 ];
 
-const skills: Skill[] = [
-    { name: "Strategic Marketing Planning", percent: 100 },
-    { name: "Digital Marketing", percent: 70 },
-    { name: "Brand Management", percent: 80 },
-    { name: "Team Leadership", percent: 96 },
-];
 
 const TeamDetailsMain: React.FC = () => {
     return (
