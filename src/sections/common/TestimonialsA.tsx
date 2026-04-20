@@ -1,8 +1,7 @@
 "use client"
-import React from 'react'; 
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
-import Image from 'next/image';
 import { testimonialsPage } from '@/contents/testimonials/testimonials';
 import { TestimonialPage } from '@/contents/testimonials/type';
 import TextAnimation from '@/components/elements/TextAnimation';
@@ -47,7 +46,7 @@ const TestimonialsA: React.FC = () => {
                         {testimonialsPage.map((t: TestimonialPage) => (
                             <SwiperSlide key={t.id}>
                                 <div className="item">
-                                    <div className="testimonial-one__single"> 
+                                    <div className="testimonial-one__single">
                                         <div className="testimonial-one__client-info">
                                             {/* <div className="testimonial-one__client-img-box">
                                                 <div className="testimonial-one__client-img">
@@ -65,8 +64,8 @@ const TestimonialsA: React.FC = () => {
                                                     {t.batch} - {t.role}
                                                 </span>
                                             </div>
-                                        </div> 
-                                        <p className="testimonial-one__text">{t.text}</p> 
+                                        </div>
+                                        <p className="testimonial-one__text">{t.text}</p>
                                         <div className="testimonial-one__rating">
                                             {[...Array(5)].map((_, i) => (
                                                 <span
