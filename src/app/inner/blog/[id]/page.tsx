@@ -12,7 +12,7 @@ interface PageProps {
 const Page = async ({ params }: PageProps) => {
   const resolvedParams = await params;
   const id = parseInt(resolvedParams.id);
-  
+
   const post = blogPosts.find((p) => p.id === id);
 
   if (!post) {
@@ -21,11 +21,11 @@ const Page = async ({ params }: PageProps) => {
 
   return (
     <>
-      <BannerCommon title="Blog" subtitle="Details" breadcrumb="Blog Details" />
+      <BannerCommon title="Stories" subtitle="& Strategies" breadcrumb="Blog" />
       <BlogDetailsMain post={post} />
       <BlogDetailsCarousel />
     </>
   );
 };
 
-export default Page;
+export default Page;

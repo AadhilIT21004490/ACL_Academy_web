@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
         tags: ['Productivity', '★', 'Tech Innovation'],
         title: `Future of Artificial Intelligence: What's Next in 2025?`,
         description: 'As we move towards 2025, the landscape of artificial intelligence continues to evolve',
-        link: '/inner/blog-details',
+        link: '/inner/blog',
     },
     {
         id: 2,
@@ -29,7 +29,7 @@ export const blogPosts: BlogPost[] = [
         tags: ['Technology', '★', 'Wellness'],
         title: '5 Essential Wellness Tips for a Healthier Lifestyle',
         description: "Achieving a healthier lifestyle doesn't have to be complicated.",
-        link: '/inner/blog-details',
+        link: '/inner/blog',
     },
     {
         id: 3,
@@ -38,7 +38,7 @@ export const blogPosts: BlogPost[] = [
         tags: ['Sustainability', '★', 'Eco-Friendly'],
         title: 'Sustainable Fashion: How to Build an Eco-Friendly Wardrobe',
         description: 'This guide covers sustainable fabrics, ethical brands, and mindful shopping',
-        link: '/inner/blog-details',
+        link: '/inner/blog',
     },
     {
         id: 4,
@@ -47,7 +47,7 @@ export const blogPosts: BlogPost[] = [
         tags: ['AI', '★', 'Innovation'],
         title: 'The Power of Automation in Modern Business',
         description: 'Automation is reshaping industries by improving efficiency and reducing costs.',
-        link: '/inner/blog-details',
+        link: '/inner/blog',
     },
 ];
 

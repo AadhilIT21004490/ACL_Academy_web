@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react"; 
+import React, { useState } from "react";
 import Image from "next/image";
 import { blogPosts, BlogPost } from "@/data/events";
 import Link from "next/link";
@@ -8,7 +8,7 @@ import BlogListSidebar from "./BlogListSidebar";
 const BlogListMain: React.FC = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const ITEMS_PER_PAGE = 3;
-    
+
     // Pagination logic
     const totalPages = Math.ceil(blogPosts.length / ITEMS_PER_PAGE);
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -62,9 +62,6 @@ const BlogListMain: React.FC = () => {
                                         </p>
 
                                         <div className="blog-list__client-info">
-                                            <div className="blog-list__client-img">
-                                                <Image src={blog.author.image} width={38} height={38} alt={blog.author.name} />
-                                            </div>
                                             <div className="blog-list__client-content">
                                                 <span>Post By</span>
                                                 <p>{blog.author.name}</p>
