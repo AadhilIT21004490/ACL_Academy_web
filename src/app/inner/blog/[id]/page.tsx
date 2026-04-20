@@ -2,18 +2,30 @@ import React from 'react';
 import BlogDetailsCarousel from '@/sections/blog/BlogDetailsCarousel';
 import BlogDetailsMain from '@/sections/blog/BlogDetailsMain';
 import BannerCommon from '@/sections/common/BannerCommon';
-import { blogPosts } from "../../../../data/events"; // adjust path as needed
+import { blogPosts } from "@/data/events";
+import { notFound } from 'next/navigation';
 
-const page: React.FC = () => {
-    
-  const post = blogPosts[0]; // default to first post
-    return (
-        <>
-            <BannerCommon title='Upcoming' subtitle='Events' breadcrumb='Events' />
-            <BlogDetailsMain  post={post}/>
-            <BlogDetailsCarousel />
-        </>
-    );
+interface PageProps {
+  params: Promise<{ id: string }> | { id: string };
+}
+
+const Page = async ({ params }: PageProps) => {
+  const resolvedParams = await params;
+  const id = parseInt(resolvedParams.id);
+  
+  const post = blogPosts.find((p) => p.id === id);
+
+  if (!post) {
+    notFound();
+  }
+
+  return (
+    <>
+      <BannerCommon title="Blog" subtitle="Details" breadcrumb="Blog Details" />
+      <BlogDetailsMain post={post} />
+      <BlogDetailsCarousel />
+    </>
+  );
 };
 
-export default page;
+export default Page;
