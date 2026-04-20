@@ -21,6 +21,7 @@ export interface TestimonialTwo {
 export interface TestimonialPage {
     id: number;
     name: string;
+    batch: string;
     role: string;
     image: string | StaticImageData;
     text: string;

@@ -20,7 +20,7 @@ const TeamCarouselMain: React.FC = () => {
                             <div className="section-title-two__tagline-icon-1"></div>
                             <div className="section-title-two__tagline-icon-2"></div>
                         </div>
-                        <span className="section-title-two__tagline">Our Team</span>
+                        <span className="section-title-two__tagline">Our Lecturers</span>
                     </div>
                     <h2 className="section-title-two__title title-animation">
                         <TextAnimation text='Building Success Through ' textColor='black' isSpan={false} />
@@ -61,8 +61,9 @@ const TeamCarouselMain: React.FC = () => {
                                             <h4 className="team-page__title">
                                                 <Link href={member.link}>{member.name}</Link>
                                             </h4>
-                                            <p className="team-page__text">{member.position}</p>
-                                            <div className="team-page__social">
+                                            <p className="team-page__text">{member.education}</p>
+                                            <p><strong>{member.position}</strong></p>
+                                            {/* <div className="team-page__social">
                                                 <div className="team-page__social-shape-1">
                                                     <Image src={socialShape1} alt="Social Shape" />
                                                 </div>
@@ -73,7 +74,7 @@ const TeamCarouselMain: React.FC = () => {
                                                 <a href="#"><span className="icon-linkedin"></span></a>
                                                 <a href="#"><span className="icon-twitter"></span></a>
                                                 <a href="#"><span className="icon-facebook"></span></a>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>

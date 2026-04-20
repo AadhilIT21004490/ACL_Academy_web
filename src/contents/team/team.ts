@@ -4,6 +4,7 @@ import afrath from '../../../public/assets/images/team/afr.jpg';
 import fayas from '../../../public/assets/images/team/fayas.jpg';
 import teamImg1 from '../../../public/assets/images/team/afr.jpg';
 import irsath from '../../../public/assets/images/team/irsath.jpg';
+import shaf from '../../../public/assets/images/team/shaf2.jpg';
 import type { TeamMember } from './teamType';
 import teamPageImg1 from "../../../public/assets/images/team/afr.jpg";
 export const teamMembers: TeamMember[] = [
@@ -40,7 +41,7 @@ export const teamMembers: TeamMember[] = [
         position: 'Manager',
         education: 'MSc (Biochemistry & Biotechnology), BSc (Hons) Biomedical Science',
         description: 'Fathima Shafnam Jalal is a Biomedical Specialist with a strong academic and professional background in biochemistry, biotechnology, and clinical laboratory sciences. She holds an MSc in Biochemistry & Biotechnology and a BSc (Hons) in Biomedical Science, supported by professional certifications in Laboratory Quality Management (ISO/IEC 17025) and Quality Management Systems (ISO 9001).With hands-on experience in molecular biology and diagnostic analysis, her expertise includes PCR-based techniques, microbiology, and clinical testing, along with strong knowledge of GMP, GLP, and GCP principles. She is highly experienced in maintaining laboratory quality systems, ensuring regulatory compliance, and delivering accurate, high-quality scientific outcomes. Fathima is recognized for her analytical precision, attention to detail, and commitment to excellence in healthcare and research environments. Currently based in Saudi Arabia, she contributes to advancing biomedical practices, quality assurance systems, and innovation within the healthcare and biotechnology sectors.',
-        image: teamImg1,
+        image: shaf,
         link: '#',
     },
 ];
@@ -83,7 +84,7 @@ export const teamMembersTeamPage: TeamMember[] = [
         position: 'Manager',
         education: 'MSc (Biochemistry & Biotechnology), BSc (Hons) Biomedical Science',
         description: 'Fathima Shafnam Jalal is a Biomedical Specialist with a strong academic and professional background in biochemistry, biotechnology, and clinical laboratory sciences. She holds an MSc in Biochemistry & Biotechnology and a BSc (Hons) in Biomedical Science, supported by professional certifications in Laboratory Quality Management (ISO/IEC 17025) and Quality Management Systems (ISO 9001).With hands-on experience in molecular biology and diagnostic analysis, her expertise includes PCR-based techniques, microbiology, and clinical testing, along with strong knowledge of GMP, GLP, and GCP principles. She is highly experienced in maintaining laboratory quality systems, ensuring regulatory compliance, and delivering accurate, high-quality scientific outcomes. Fathima is recognized for her analytical precision, attention to detail, and commitment to excellence in healthcare and research environments. Currently based in Saudi Arabia, she contributes to advancing biomedical practices, quality assurance systems, and innovation within the healthcare and biotechnology sectors.',
-        image: teamImg1,
+        image: shaf,
         link: '#',
     },
 ];

@@ -49,20 +49,20 @@ const TestimonialsA: React.FC = () => {
                                 <div className="item">
                                     <div className="testimonial-one__single"> 
                                         <div className="testimonial-one__client-info">
-                                            <div className="testimonial-one__client-img-box">
+                                            {/* <div className="testimonial-one__client-img-box">
                                                 <div className="testimonial-one__client-img">
                                                     <Image src={t.image} width={140} height={139} alt={t.name} />
                                                 </div>
                                                 <div className="testimonial-one__quote">
                                                     <span className="icon-left"></span>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                             <div className="testimonial-one__client-content">
                                                 <p className="testimonial-one__client-name">
                                                     <a href="#">{t.name}</a>
                                                 </p>
                                                 <span className="testimonial-one__client-sub-title">
-                                                    {t.role}
+                                                    {t.batch} - {t.role}
                                                 </span>
                                             </div>
                                         </div> 

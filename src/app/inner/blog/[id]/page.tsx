@@ -2,7 +2,7 @@ import React from 'react';
 import BlogDetailsCarousel from '@/sections/blog/BlogDetailsCarousel';
 import BlogDetailsMain from '@/sections/blog/BlogDetailsMain';
 import BannerCommon from '@/sections/common/BannerCommon';
-import { blogPosts } from "../../../data/events"; // adjust path as needed
+import { blogPosts } from "../../../../data/events"; // adjust path as needed
 
 const page: React.FC = () => {
     

@@ -26,7 +26,7 @@ const HeaderTwo: React.FC = () => {
                                 <i className="icon-envelope"></i>
                             </div>
                             <div className="text">
-                                <p><a href="mailto:info@Finris24.com">info.aclacademy@gmail.com</a></p>
+                                <p><a href="mailto:aclacademy123@gmail.com">aclacademy123@gmail.com</a></p>
                             </div>
                         </li>
                         <li>
@@ -39,12 +39,7 @@ const HeaderTwo: React.FC = () => {
                         </li>
                     </ul>
                     <div className="main-menu-two__top-right">
-                        <div className="main-menu-two__top-time">
-                            <div className="main-menu-two__top-time-icon">
-                                <span className="icon-time"></span>
-                            </div>
-                            <p className="main-menu-two__top-text">Mon - Fri: 09:00 - 05:00</p>
-                        </div>
+                        
                         <div className="main-menu-two__social">
                             <a href="#"><i className="fab fa-whatsapp"></i></a>
                             <a href="#"><i className="fab fa-facebook"></i></a>

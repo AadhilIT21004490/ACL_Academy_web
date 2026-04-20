@@ -18,7 +18,7 @@ const HeaderCommon: React.FC = () => {
                                 <i className="icon-phone"></i>
                             </div>
                             <div className="text">
-                                <p><a href="tel:15502505260">+1 (550) 250 5260</a></p>
+                                <p><a href="tel:00966555091734">+966 5550 91734</a></p>
                             </div>
                         </li>
                         <li>
@@ -26,7 +26,7 @@ const HeaderCommon: React.FC = () => {
                                 <i className="icon-envelope"></i>
                             </div>
                             <div className="text">
-                                <p><a href="mailto:info@Finris24.com">info.aclacademy@gmail.com</a></p>
+                                <p><a href="mailto:aclacademy123@gmail.com">aclacademy123@gmail.com</a></p>
                             </div>
                         </li>
                         <li>
@@ -40,12 +40,7 @@ const HeaderCommon: React.FC = () => {
                     </ul>
                     {/* <p className="main-menu-two__top-welcome-text">Welcome to Our business Agency</p> */}
                     <div className="main-menu-two__top-right">
-                        <div className="main-menu-two__top-time">
-                            <div className="main-menu-two__top-time-icon">
-                                <span className="icon-time"></span>
-                            </div>
-                            <p className="main-menu-two__top-text">Mon - Fri: 09:00 - 05:00</p>
-                        </div>
+                        
                         <div className="main-menu-two__social">
                             <a href="#"><i className="fab fa-whatsapp"></i></a>
                             <a href="#"><i className="fab fa-facebook"></i></a>

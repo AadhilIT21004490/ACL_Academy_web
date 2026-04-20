@@ -83,7 +83,7 @@ const MobileNav: React.FC = () => {
                 <ul className="mobile-nav__contact list-unstyled">
                     <li>
                         <i className="fa fa-envelope"></i>
-                        <Link href="mailto:info.aclacademy@gmail.com">info.aclacademy@gmail.com</Link>
+                        <Link href="mailto:aclacademy123@gmail.com">aclacademy123@gmail.com</Link>
                     </li>
                     <li>
                         <i className="fas fa-phone"></i>
@@ -231,7 +231,7 @@ const MobileNav: React.FC = () => {
                 <ul className="mobile-nav__contact list-unstyled">
                     <li>
                         <i className="fa fa-envelope"></i>
-                        <Link href="mailto:info.aclacademy@gmail.com">info.aclacademy@gmail.com</Link>
+                        <Link href="mailto:aclacademy123@gmail.com">aclacademy123@gmail.com</Link>
                     </li>
                     <li>
                         <i className="fas fa-phone"></i>

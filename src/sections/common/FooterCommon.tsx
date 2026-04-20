@@ -81,7 +81,7 @@ const FooterCommon: React.FC = () => {
                                                     </div>
                                                     <div className="text">
                                                         <p>
-                                                            <a href="mailto:support@domain.com">info.aclacademy@gmail.com</a>
+                                                            <a href="mailto:support@domain.com">aclacademy123@gmail.com</a>
                                                         </p>
                                                     </div>
                                                 </li>
@@ -91,7 +91,7 @@ const FooterCommon: React.FC = () => {
                                                     </div>
                                                     <div className="text">
                                                         <p>
-                                                            <a href="tel:001234568900">+94 (123) 456 8900</a>
+                                                            <a href="tel:00966555091734">+966 5550 91734</a>
                                                         </p>
                                                     </div>
                                                 </li>
