@@ -18,7 +18,7 @@ const HeaderCommon: React.FC = () => {
                                 <i className="icon-phone"></i>
                             </div>
                             <div className="text">
-                                <p><a href="tel:00966555091734">+966 5550 91734</a></p>
+                                <p><a href="tel:+94763136718">+94763136718</a></p>
                             </div>
                         </li>
                         <li>
@@ -40,7 +40,7 @@ const HeaderCommon: React.FC = () => {
                     </ul>
                     {/* <p className="main-menu-two__top-welcome-text">Welcome to Our business Agency</p> */}
                     <div className="main-menu-two__top-right">
-                        
+
                         <div className="main-menu-two__social">
                             <a href="#"><i className="fab fa-whatsapp"></i></a>
                             <a href="#"><i className="fab fa-facebook"></i></a>
@@ -71,11 +71,11 @@ const HeaderCommon: React.FC = () => {
                                 <div className="main-menu-two__call-content">
                                     <p className="main-menu-two__call-sub-title">Call Anytime</p>
                                     <h5 className="main-menu-two__call-number">
-                                        <a href="tel:966555091734">+966 5550 91734</a>
+                                        <a href="tel:+94763136718">+94763136718</a>
                                     </h5>
                                 </div>
                             </div>
-                            
+
                             <div className="main-menu-two__btn-box">
                                 <Link href="/inner/contact" className="thm-btn thm-btn-two main-menu-two__btn">
                                     Contact us

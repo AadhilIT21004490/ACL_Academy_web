@@ -91,7 +91,7 @@ const FooterCommon: React.FC = () => {
                                                     </div>
                                                     <div className="text">
                                                         <p>
-                                                            <a href="tel:00966555091734">+966 5550 91734</a>
+                                                            <a href="tel:+94763136718">+94763136718</a>
                                                         </p>
                                                     </div>
                                                 </li>
@@ -153,7 +153,7 @@ const FooterCommon: React.FC = () => {
                                     </div>
                                     <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                                         <div className="footer-widget-two__services">
-                                            <h4 className="footer-widget-two__title">Our Services</h4>
+                                            <h4 className="footer-widget-two__title">Our Courses</h4>
                                             <ul className="footer-widget-two__quick-links-list footer-widget-two__services-list list-unstyled">
                                                 {
                                                     LINKTHREE.map(Item => <motion.li

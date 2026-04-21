@@ -48,11 +48,11 @@ const StrickyHeaderTwo: React.FC = () => {
                                 <div className="main-menu-two__call-content">
                                     <p className="main-menu-two__call-sub-title">Call Anytime</p>
                                     <h5 className="main-menu-two__call-number">
-                                        <a href="tel:966555091734">+966 5550 91734</a>
+                                        <a href="tel:+94763136718">+94763136718</a>
                                     </h5>
                                 </div>
                             </div>
-                            
+
                             <div className="main-menu-two__btn-box">
                                 <Link href="/inner/contact" className="thm-btn thm-btn-two main-menu-two__btn">
                                     Contact us

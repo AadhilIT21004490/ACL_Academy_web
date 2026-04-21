@@ -20,7 +20,7 @@ const contactInfo: ContactItem[] = [
     title: "Contact Info",
     text: (
       <>
-        <a href="tel:00966555091734">+966 5550 91734</a>
+        <a href="tel:+94763136718">+94763136718</a>
         <br />
         <a href="mailto:aclacademy123@gmail.com">aclacademy123@gmail.com</a>
       </>
@@ -41,7 +41,7 @@ const contactInfo: ContactItem[] = [
     ),
   },
 ];
-const WHATSAPP_NUMBER = "+966555091734";
+const WHATSAPP_NUMBER = "+94763136718";
 const ContactMain: React.FC = () => {
 
   const [form, setForm] = useState({

@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'; 
+import React from 'react';
 import logo2 from '../../../public/assets/images/resources/logo-2.png';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -18,7 +18,7 @@ const HeaderTwo: React.FC = () => {
                                 <i className="icon-phone"></i>
                             </div>
                             <div className="text">
-                                <p><a href="tel:00966555091734">+966 5550 91734</a></p>
+                                <p><a href="tel:+94763136718">+94763136718</a></p>
                             </div>
                         </li>
                         <li>

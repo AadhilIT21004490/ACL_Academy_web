@@ -50,16 +50,21 @@ export const LINKTHREE: LINK[] = [
     {
         id: 1,
         link: "/inner/quantity-surveying",
-        value: "Quantity Surveying Practical Class"
+        value: "Quantity Surveying Practice Training"
     },
     {
         id: 2,
         link: "/inner/rics-coaching",
-        value: "RICS Coaching Class"
+        value: "RICS APC Mock Interview"
     },
     {
         id: 3,
         link: "/inner/ai-qs",
-        value: "Quantity Surveying + Ai"
+        value: "AI + Quantity Surveying"
+    },
+    {
+        id: 4,
+        link: "/inner/rics-full",
+        value: "RICS APC Full Training"
     },
 ]

@@ -46,7 +46,7 @@ const AboutTwo: React.FC = () => {
                                 <h2 className="section-title-two__title title-animation">
                                     <TextAnimation text='Real-World Skills for the ' fontSize='42' textColor='black' isSpan={false} />
                                     <TextAnimation text='Modern Built Environment.' fontSize='42' textColor='#6232F8' isSpan={false} />
-                                     
+
 
                                 </h2>
                             </div>
@@ -133,7 +133,7 @@ const AboutTwo: React.FC = () => {
                                         <div className="about-two__call-content">
                                             <p className="about-two__call-sub-title">Connect us</p>
                                             <h3 className="about-two__call-number">
-                                                <a href="tel:966555091734">+966 5550 91734</a>
+                                                <a href="tel:+94763136718">+94763136718</a>
                                             </h3>
                                         </div>
                                     </div>
