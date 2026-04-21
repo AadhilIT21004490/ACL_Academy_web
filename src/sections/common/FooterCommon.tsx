@@ -186,7 +186,7 @@ const FooterCommon: React.FC = () => {
                                 <div className="site-footer-two__bottom-inner">
                                     <div className="site-footer-two__copyright">
                                         <p className="site-footer-two__copyright-text">
-                                            &copy; 2026 By A2labz. All Rights Reserved.
+                                            &copy; 2026 By <Link href="https://a2labz.com" target="_blank">A2labz</Link>. All Rights Reserved.
                                         </p>
                                     </div>
                                 </div>

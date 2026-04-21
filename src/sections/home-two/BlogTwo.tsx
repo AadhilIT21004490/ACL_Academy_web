@@ -6,52 +6,13 @@ import shape1 from '../../../public/assets/images/shapes/blog-two-shape-1.png';
 import shape2 from '../../../public/assets/images/shapes/blog-two-shape-2.png';
 import Image from 'next/image';
 import TextAnimation from '@/components/elements/TextAnimation';
-import { BlogPost } from '@/contents/blog/blogType';
 import Link from 'next/link';
-import blogPostImg1 from '../../../public/assets/images/posts/abt1.jpg';
-import blogPostImg2 from '../../../public/assets/images/posts/abt1.jpg';
-import blogPostImg3 from '../../../public/assets/images/posts/abt1.jpg';
-
-export const blogPosts: BlogPost[] = [
-    {
-        id: 1,
-        image: blogPostImg2,
-        date: 'August 20, 2025',
-        tags: ['Productivity', '★', 'Tech Innovation'],
-        title: `Future of Artificial Intelligence: What's Next in 2025?`,
-        description: 'As we move towards 2025, the landscape of artificial intelligence continues to evolve',
-        link: '/inner/blog',
-    },
-    {
-        id: 2,
-        image: blogPostImg1,
-        date: 'March 15, 2025',
-        tags: ['Technology', '★', 'Wellness'],
-        title: '5 Essential Wellness Tips for a Healthier Lifestyle',
-        description: "Achieving a healthier lifestyle doesn't have to be complicated.",
-        link: '/inner/blog',
-    },
-    {
-        id: 3,
-        image: blogPostImg3,
-        date: 'July 10, 2025',
-        tags: ['Sustainability', '★', 'Eco-Friendly'],
-        title: 'Sustainable Fashion: How to Build an Eco-Friendly Wardrobe',
-        description: 'This guide covers sustainable fabrics, ethical brands, and mindful shopping',
-        link: '/inner/blog',
-    },
-    {
-        id: 4,
-        image: blogPostImg1,
-        date: 'October 2, 2025',
-        tags: ['AI', '★', 'Innovation'],
-        title: 'The Power of Automation in Modern Business',
-        description: 'Automation is reshaping industries by improving efficiency and reducing costs.',
-        link: '/inner/blog',
-    },
-];
+import { blogPosts, BlogPost } from '@/data/events';
 
 const BlogTwo: React.FC = () => {
+    // Sort logic to show latest posts first
+    const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
     return (
         <section className="blog-two">
             {/* Decorative shapes */}
@@ -97,13 +58,13 @@ const BlogTwo: React.FC = () => {
                         }}
                         className="blog-two__swiper"
                     >
-                        {blogPosts.map((post: BlogPost) => (
+                        {sortedPosts.map((post: BlogPost) => (
                             <SwiperSlide key={post.id}>
                                 <div className="blog-two__single">
                                     <div className="blog-two__img">
-                                        <Image src={post.image} width={362} height={240} alt={post.title} />
+                                        <Image src={post.mainImage} width={362} height={240} alt={post.title} />
                                         <div className="blog-two__plus">
-                                            <Link href={post.link}>
+                                            <Link href={`/inner/blog/${post.id}`}>
                                                 <span className="icon-plus"></span>
                                             </Link>
                                         </div>
@@ -115,21 +76,14 @@ const BlogTwo: React.FC = () => {
                                             </p>
                                         </div>
                                         <div className="blog-two__content-inner">
-                                            <ul className="list-unstyled blog-two__tag">
-                                                {post.tags.map((tag, i) => (
-                                                    <li key={i}>
-                                                        <p>{tag}</p>
-                                                    </li>
-                                                ))}
-                                            </ul>
                                             <h3 className="blog-two__title">
-                                                <Link href={post.link}>{post.title}</Link>
+                                                <Link href={`/inner/blog/${post.id}`}>{post.title}</Link>
                                             </h3>
-                                            <p className="blog-two__text">{post.description}</p>
+                                            <p className="blog-two__text">{post.description.slice(0, 100)}...</p>
                                         </div>
                                         <div className="blog-two__read-more">
                                             <div className="blog-two__read-more-line"></div>
-                                            <Link href={post.link} className="blog-two__read-more-text">
+                                            <Link href={`/inner/blog/${post.id}`} className="blog-two__read-more-text">
                                                 Read More
                                             </Link>
                                         </div>
