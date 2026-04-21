@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { BLOG_LINKS, HOME_LINKS, SERVICES_LINKS} from '@/contents/nav/nav';
+import { BLOG_LINKS, HOME_LINKS, SERVICES_LINKS } from '@/contents/nav/nav';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -43,7 +43,7 @@ const ManuList: React.FC = () => {
                     }
                 </ul>
             </li>
-            <li className={`dropdown ${isCurrent(["/blog", "/blog-carousel", "/blog-list", "/blog-details"]) ? 'current' : ''}`}>
+            {/* <li className={`dropdown ${isCurrent(["/blog", "/blog-carousel", "/blog-list", "/blog-details"]) ? 'current' : ''}`}>
                 <a href="#">Blog</a>
                 <ul>
                     {
@@ -52,6 +52,9 @@ const ManuList: React.FC = () => {
                         </li>)
                     }
                 </ul>
+            </li> */}
+            <li className={`${isCurrent(["/blog"]) ? 'current' : ''}`}>
+                <Link href="/inner/blog">Blogs</Link>
             </li>
             <li className={`${isCurrent(["/contact"]) ? 'current' : ''}`}>
                 <Link href="/inner/contact">Contact</Link>

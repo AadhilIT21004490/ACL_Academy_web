@@ -5,12 +5,15 @@ import { Autoplay, Navigation } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import blogStar from "../../../public/assets/images/shapes/blog-one-star.png";
 import Image from "next/image";
-import { blogCarouselData } from "@/contents/blog/blog";
-import { BlogCarouselItem } from "@/contents/blog/blogType";
 import Link from "next/link";
+import { blogPosts, BlogPost } from "@/data/events";
 
 const BlogDetailsCarousel: React.FC = () => {
     const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
+
+    const displayPosts = [...blogPosts]
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
     return (
         <section className="blog-one">
             <div className="blog-one__star zoominout">
@@ -24,7 +27,7 @@ const BlogDetailsCarousel: React.FC = () => {
                             <div className="section-title__tagline-icon-1"></div>
                             <div className="section-title__tagline-icon-2"></div>
                         </div>
-                        <span className="section-title__tagline">Our Blogs</span>
+                        <span className="section-title__tagline">Events</span>
                     </div>
                     <h2 className="section-title__title title-animation">
                         Discover our latest news <br /> and <span>updates now.</span>
@@ -50,39 +53,32 @@ const BlogDetailsCarousel: React.FC = () => {
                             1024: { slidesPerView: 3, spaceBetween: 30 },
                         }}
                     >
-                        {blogCarouselData.map((blog: BlogCarouselItem) => (
+                        {displayPosts.map((blog: BlogPost) => (
                             <SwiperSlide className="item" key={blog.id}>
                                 <div className="blog-one__single">
                                     {/* Image */}
                                     <div className="blog-one__img">
-                                        <Image src={blog.image} alt={blog.title} />
+                                        <Image src={blog.mainImage} width={370} height={252} alt={blog.title} />
                                         <div className="blog-one__plus">
-                                            <Link href={blog.link}>
+                                            <Link href={`/inner/blog/${blog.id}`}>
                                                 <span className="icon-plus"></span>
                                             </Link>
-                                        </div>
-                                        <div className="blog-one__tags">
-                                            {blog.tags.map((tag, index) => (
-                                                <span key={index}>{tag}</span>
-                                            ))}
                                         </div>
                                     </div>
 
                                     {/* Content */}
                                     <div className="blog-one__content">
                                         <h3 className="blog-one__title">
-                                            <Link href={blog.link}>{blog.title}</Link>
+                                            <Link href={`/inner/blog/${blog.id}`}>{blog.title}</Link>
                                         </h3>
-                                        <p className="blog-one__text">{blog.description}</p>
+                                        <p className="blog-one__text">{blog.description.slice(0, 100)}...</p>
 
                                         {/* User Info */}
                                         <div className="blog-one__user">
-                                            <div className="blog-one__user-img">
-                                                <Image src={blog.userImage} alt={blog.userName} />
-                                            </div>
+
                                             <div className="blog-one__user-content">
                                                 <h5 className="blog-one__user-name">
-                                                    <Link href={blog.link}>{blog.userName}</Link>
+                                                    <Link href={`/inner/blog/${blog.id}`}>{blog.author.name}</Link>
                                                 </h5>
                                                 <p className="blog-one__date">{blog.date}</p>
                                             </div>

@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { useFinrisContext } from '../context/useFinrisContext';
 import Link from 'next/link';
 import Image from 'next/image';
-import { BLOG_LINKS, HOME_LINKS, navItemsSingle, SERVICES_LINKS} from '@/contents/nav/nav';
+import { BLOG_LINKS, HOME_LINKS, navItemsSingle, SERVICES_LINKS } from '@/contents/nav/nav';
 import { NavItemSingle } from '@/contents/footer/footerType';
 import { usePathname } from 'next/navigation';
 const MobileNav: React.FC = () => {
@@ -198,8 +198,10 @@ const MobileNav: React.FC = () => {
 
                             </ul>
                         </li>
+                        <li><Link onClick={closeMobileState} href="/inner/blog">Blogs</Link></li>
 
-                        <li className="dropdown">
+
+                        {/* <li className="dropdown">
                             <Link href="#">
                                 <span className={`${isBlogOpen ? 'hoverColor' : ''}`}>Blog</span>
                                 <button onClick={() => setIsBlogOpen(pre => !pre)} type="button" className={`${isBlogOpen ? 'expanded' : ''}`}>
@@ -221,7 +223,7 @@ const MobileNav: React.FC = () => {
                                     </motion.li>)
                                 }
                             </ul>
-                        </li>
+                        </li> */}
 
                         <li><Link onClick={closeMobileState} href="/contact">Contact</Link></li>
                     </ul>

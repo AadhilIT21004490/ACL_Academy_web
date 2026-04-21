@@ -29,11 +29,11 @@ export const LINKSTWO: LINK[] = [
         link: "/inner/about",
         value: "Teams & Condition"
     },
-    {
-        id: 2,
-        link: "/inner/faq",
-        value: "FAQs"
-    },
+    // {
+    //     id: 2,
+    //     link: "/inner/faq",
+    //     value: "FAQs"
+    // },
     {
         id: 3,
         link: "/inner/contact",
@@ -44,11 +44,6 @@ export const LINKSTWO: LINK[] = [
     //     link: "/404",
     //     value: "404 Page"
     // },
-    {
-        id: 5,
-        link: "/inner/contact",
-        value: "Live Chat"
-    },
 ]
 
 export const LINKTHREE: LINK[] = [
@@ -61,5 +56,10 @@ export const LINKTHREE: LINK[] = [
         id: 2,
         link: "/inner/rics-coaching",
         value: "RICS Coaching Class"
+    },
+    {
+        id: 3,
+        link: "/inner/ai-qs",
+        value: "Quantity Surveying + Ai"
     },
 ]
