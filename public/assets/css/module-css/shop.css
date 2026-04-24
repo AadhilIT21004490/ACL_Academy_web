@@ -707,6 +707,7 @@ Product
     /* padding-right: 30px; */
     width: 100%;
     margin-bottom: 0px;
+    border-color: black !important;
 }
 
 .product__showing-sort .select-box .nice-select:after {

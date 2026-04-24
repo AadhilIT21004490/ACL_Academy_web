@@ -225,7 +225,7 @@ const MobileNav: React.FC = () => {
                             </ul>
                         </li> */}
 
-                        <li><Link onClick={closeMobileState} href="/contact">Contact</Link></li>
+                        <li><Link onClick={closeMobileState} href="/inner/contact">Contact</Link></li>
                     </ul>
                 </div>
 

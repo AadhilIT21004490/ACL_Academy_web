@@ -41,18 +41,29 @@ const contactInfo: ContactItem[] = [
     ),
   },
 ];
+
 const WHATSAPP_NUMBER = "+94763136718";
+
+const courses = [
+  "Quantity Surveying Practice Training",
+  "RICS APC Mock Interview",
+  "AI + Quantity Surveying",
+  "RICS APC Full Training",
+  "Power Bi for QS",
+];
+
 const ContactMain: React.FC = () => {
 
   const [form, setForm] = useState({
     name: "",
     email: "",
+    course: "",
     subject: "",
     message: "",
   });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
@@ -63,6 +74,7 @@ const ContactMain: React.FC = () => {
     const text = [
       `*Name:* ${form.name}`,
       `*Email:* ${form.email}`,
+      `*Course:* ${form.course || "Not specified"}`,
       `*Subject:* ${form.subject}`,
       `*Message:*\n${form.message}`,
     ].join("\n");
@@ -72,7 +84,6 @@ const ContactMain: React.FC = () => {
 
     window.open(url, "_blank");
   };
-
 
   return (
     <>
@@ -101,6 +112,7 @@ const ContactMain: React.FC = () => {
                 </div>
               </div>
             </div>
+
             {/* RIGHT SIDE FORM */}
             <div className="col-xl-6 col-lg-6">
               <div className="contact-page__right">
@@ -116,6 +128,7 @@ const ContactMain: React.FC = () => {
                   onSubmit={handleSubmit}
                 >
                   <div className="row">
+                    {/* Name */}
                     <div className="col-xl-12">
                       <div className="contact-page__input-box">
                         <div className="contact-page__input-icon">
@@ -132,7 +145,8 @@ const ContactMain: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="col-xl-6">
+                    {/* Email */}
+                    <div className="col-xl-12">
                       <div className="contact-page__input-box">
                         <div className="contact-page__input-icon">
                           <span className="icon-envelope"></span>
@@ -148,7 +162,38 @@ const ContactMain: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="col-xl-6">
+                    {/* Course Dropdown */}
+                    <div className="col-xl-12">
+                      <div className="contact-page__input-box" style={{ border: "1px solid #e5e5e5", borderRadius: "8px", padding: "15px" }}>
+                        <div className="select-box">
+                          <select
+                            className="nice-select"
+                            name="course"
+                            value={form.course}
+                            onChange={handleChange}
+                            style={{
+                              width: "100%",
+                              border: "none",
+                              outline: "none",
+                              background: "transparent",
+                              fontSize: "inherit",
+                              color: form.course ? "inherit" : "#999",
+                              cursor: "pointer",
+                            }}
+                          >
+                            <option value="">Select a Course</option>
+                            {courses.map((course) => (
+                              <option key={course} value={course}>{course}</option>
+                            ))}
+                          </select>
+                          <div />
+                        </div>
+                      </div>
+                    </div>
+
+
+                    {/* Subject */}
+                    <div className="col-xl-12">
                       <div className="contact-page__input-box">
                         <div className="contact-page__input-icon">
                           <span className="icon-resume"></span>
@@ -164,6 +209,7 @@ const ContactMain: React.FC = () => {
                       </div>
                     </div>
 
+                    {/* Message */}
                     <div className="col-xl-12">
                       <div className="contact-page__input-box text-message-box">
                         <div className="contact-page__input-icon">
@@ -192,6 +238,7 @@ const ContactMain: React.FC = () => {
           </div>
         </div>
       </section>
+
       {/* ================= Google Map ================= */}
       <section className="google-map-one">
         <div className="container">
