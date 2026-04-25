@@ -99,12 +99,13 @@ const FooterCommon: React.FC = () => {
                                             <div className="site-footer-two__social-box">
                                                 <p className="site-footer-two__social-title">Follow Us</p>
                                                 <div className="site-footer-two__social">
-                                                    <Link href="#">
+                                                    <Link href="https://web.facebook.com/people/ACL-Academy/61581348707450/">
                                                         <i className="icon-facebook"></i>
                                                     </Link>
-                                                    <Link href="#">
+                                                    <Link href="https://www.linkedin.com/company/acl-academy1/">
                                                         <i className="icon-linkedin"></i>
                                                     </Link>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -130,7 +131,7 @@ const FooterCommon: React.FC = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                    <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                                    {/* <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                                         <div className="footer-widget-two__support">
                                             <h4 className="footer-widget-two__title">Support</h4>
                                             <ul className="footer-widget-two__quick-links-list footer-widget-two__support-list list-unstyled">
@@ -150,7 +151,7 @@ const FooterCommon: React.FC = () => {
                                                 }
                                             </ul>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                                         <div className="footer-widget-two__services">
                                             <h4 className="footer-widget-two__title">Our Courses</h4>

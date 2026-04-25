@@ -1,9 +1,9 @@
 "use client"
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';  
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import socialShape1 from "../../../public/assets/images/shapes/team-page-social-shape-1.png";
-import socialShape2 from "../../../public/assets/images/shapes/team-page-social-shape-2.png"; 
+import socialShape2 from "../../../public/assets/images/shapes/team-page-social-shape-2.png";
 import { teamMembersTeamPage } from '@/contents/team/team';
 import { TeamMember } from '@/contents/team/teamType';
 import Image from 'next/image';
@@ -20,11 +20,11 @@ const TeamCarouselMain: React.FC = () => {
                             <div className="section-title-two__tagline-icon-1"></div>
                             <div className="section-title-two__tagline-icon-2"></div>
                         </div>
-                        <span className="section-title-two__tagline">Our Lecturers</span>
+                        <span className="section-title-two__tagline"></span>
                     </div>
                     <h2 className="section-title-two__title title-animation">
-                        <TextAnimation text='Building Success Through ' textColor='black' isSpan={false} />
-                        <TextAnimation text='Collaboration and Innovation' textColor='#6232F8' isSpan={false} />
+                        <TextAnimation text='Lets Meet Our' textColor='black' isSpan={false} />
+                        <TextAnimation text='Lecturers' textColor='#6232F8' isSpan={false} />
                     </h2>
                 </div>
                 <div className="team-carousel-style owl-carousel owl-theme carousel-dot-style">

@@ -41,9 +41,9 @@ const HeaderTwo: React.FC = () => {
                     <div className="main-menu-two__top-right">
 
                         <div className="main-menu-two__social">
-                            <a href="#"><i className="fab fa-whatsapp"></i></a>
-                            <a href="#"><i className="fab fa-facebook"></i></a>
-                            <a href="#"><i className="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/+94763136718"><i className="fab fa-whatsapp"></i></a>
+                            <a href="https://web.facebook.com/people/ACL-Academy/61581348707450/"><i className="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/acl-academy1/"><i className="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>

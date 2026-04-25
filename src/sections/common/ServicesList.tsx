@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'; 
+import React from 'react';
 import moreIcon from "../../../public/assets/images/icon/services-details-more-services-icon.png";
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
@@ -9,9 +9,10 @@ interface Service {
     link: string;
 }
 const services: Service[] = [
-    { name: "Quantity Surveying Practice Class", link: "/inner/quantity-surveying" },
-    { name: "RICS Coaching Class", link: "/inner/rics-coaching" },
-    { name: "Ai x QS", link: "/inner/ai-qs" },
+    { name: "Quantity Surveying Practice Training", link: "/inner/quantity-surveying" },
+    { name: "RICS APC Mock Interview", link: "/inner/rics-coaching" },
+    { name: "AI + Quantity Surveying", link: "/inner/ai-qs" },
+    { name: "RICS APC Full Training", link: "/inner/rics-full" },
 ]
 const ServicesList: React.FC = () => {
     const PathName = usePathname();

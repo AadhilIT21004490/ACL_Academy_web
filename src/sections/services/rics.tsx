@@ -12,6 +12,8 @@ import ProgressBarItem from "@/components/elements/Progresbar";
 import Link from "next/link";
 import ServicesList from "../common/ServicesList";
 import Module from "../modules/ricsmodule";
+import RICSTestimonials from "../home-two/RICSTestimonials";
+import RICSTesti from "../home-two/RICSTesti";
 interface Skill {
     name: string;
     percent: number;
@@ -26,6 +28,7 @@ const RICS: React.FC = () => {
     return (
         <section className="services-details">
             <div className="container">
+
                 <div className="row">
                     {/* LEFT SIDE */}
                     <div className="col-xl-8 col-lg-7">
@@ -36,19 +39,19 @@ const RICS: React.FC = () => {
 
                             <div className="services-details__content">
                                 <h3 className="services-details__title-1">
-                                    RICS APC Mock Interviews | Real Panel Experience & Confidence Building <br/>ACL Academy
+                                    RICS APC Mock Interviews | Real Panel Experience & Confidence Building <br />ACL Academy
                                 </h3>
 
                                 <div className="services-details__shape-1"></div>
 
                                 <p className="services-details__text-1">
                                     Prepare for your RICS APC with confidence through ACL Academy’s structured mock interview program. Designed to replicate real APC panel conditions, our program includes three full mock interviews, each with a unique questioning style—from competency-based and scenario-driven discussions to challenging panel-style sessions.
-                                </p><br/>
+                                </p><br />
                                 <p>
                                     Gain hands-on experience with real assessment environments, receive detailed feedback reports after every session, and follow a progressive improvement approach to strengthen your performance. Our expert guidance helps you develop clear communication, structured answers, and the confidence required to succeed in your APC assessment.</p>
 
                                 <h3 className="services-details__title-2">What Makes This Program Different</h3>
-                        
+
                                 {/* FEATURES LIST */}
                                 <div className="services-details__points-box">
                                     <ul className="services-details__points-list list-unstyled">
@@ -62,6 +65,8 @@ const RICS: React.FC = () => {
                                         <li><span className="icon-check"></span> Designed for Gulf / international standards</li>
                                     </ul>
                                 </div>
+                                <RICSTesti />
+
 
                                 {/* SERVICE BOXES */}
                                 {/* <div className="services-details__single-service-box">
@@ -86,20 +91,20 @@ const RICS: React.FC = () => {
                                 <div className="services-details__progress-box">
                                     <div className="row">
                                         <div className="services-details__progress-left">
-                                                <h3 className="services-details__progress-left-title">
-                                                     What Makes Our Mock Interviews Unique?
-                                                </h3>
-                                                <Module/>
+                                            <h3 className="services-details__progress-left-title">
+                                                What Makes Our Mock Interviews Unique?
+                                            </h3>
+                                            <Module />
                                         </div>
                                     </div>
                                 </div>
-                                
+
 
                                 <h3 className="services-details__title-3">Why This Matters</h3>
                                 <p className="services-details__text-3">
                                     RICS APC is not about memorizing answers —
-                                    it’s about thinking, structuring, and delivering under pressure.<br/>
-                                    Our mock interviews ensure you:<br/>
+                                    it’s about thinking, structuring, and delivering under pressure.<br />
+                                    Our mock interviews ensure you:<br />
                                 </p>
 
                                 {/* WHY OUR SERVICES POINTS */}

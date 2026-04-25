@@ -91,16 +91,16 @@ const QSBanner: React.FC = () => {
                                     <div className="main-slider__content">
                                         <div className="main-slider__title-box">
                                             <h2 className="main-slider__title">Quantity Surveying<br /> <span>Practice
-                                                Classes</span></h2>
+                                                Training</span></h2>
 
                                         </div>
                                         <p className="main-slider__text">
-                                            At ACL Academy, this is not just a course, <br/>it’s a real company-style training environment designed to transform <br/>you into a practical Quantity Surveyor ready for the industry
-                                            in <br/> ACL Academy</p>
-                                        
+                                            At ACL Academy, this is not just a course, <br />it’s a real company-style training environment designed to transform <br />you into a practical Quantity Surveyor ready for the industry
+                                            in <br /> ACL Academy</p>
+
                                         <div className="main-slider__satisfied-client-and-rating-box">
                                             <div className="main-slider__satisfied-client-box">
-                                                
+
                                                 <div className="main-slider__satisfied-client-content">
                                                     <div className="main-slider__satisfied-client-count count-box">
                                                         <h4 className="count-text" ><AdvanceCountUp ending={86} /> </h4>
@@ -108,7 +108,7 @@ const QSBanner: React.FC = () => {
                                                     </div>
                                                     <p className="main-slider__satisfied-client-count-text">Students </p>
                                                 </div>
-                                                
+
                                             </div>
                                             <div className="main-slider__rating-box">
                                                 <div className="main-slider__rating-count count-box">
@@ -116,8 +116,8 @@ const QSBanner: React.FC = () => {
                                                     <span className="main-slider__satisfied-client-count-letter">%</span>
                                                 </div>
                                                 <div className="main-slider__rating-content">
-                                                    <p className="main-slider__rating-content-sub-title"><br/>Success Rating</p>
-                                                    
+                                                    <p className="main-slider__rating-content-sub-title"><br />Success Rating</p>
+
                                                 </div>
                                             </div>
                                         </div>
