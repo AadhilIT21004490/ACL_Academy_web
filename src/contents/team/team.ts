@@ -51,12 +51,12 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: 5,
-    name: "Sahroon Mohideen",
+    name: "Sarhoon Mohideen",
     position: "",
     education:
       "BA Economics, PGD Strategic Management, MSc Agricultural Economics, MAED, currently pursuing LLB, with 10 years’ financial sector experience in Dubai.",
     description:
-      "Sahroon is a finance professional with a diverse academic background, holding a BA in Economics, a Postgraduate Diploma in Strategic Management, an MSc in Agricultural Economics, and an MA in Education. Currently pursuing an LLB, he brings a strong foundation in economics, strategy, and education, complemented by 10 years of financial sector experience in Dubai. His expertise spans financial analysis, strategic planning, and educational leadership, making him a valuable asset in driving business growth and innovation.",
+      "Sarhoon is a finance professional with a diverse academic background, holding a BA in Economics, a Postgraduate Diploma in Strategic Management, an MSc in Agricultural Economics, and an MA in Education. Currently pursuing an LLB, he brings a strong foundation in economics, strategy, and education, complemented by 10 years of financial sector experience in Dubai. His expertise spans financial analysis, strategic planning, and educational leadership, making him a valuable asset in driving business growth and innovation.",
     image: sil,
     link: "#",
   },
@@ -109,12 +109,12 @@ export const teamMembersTeamPage: TeamMember[] = [
   },
   {
     id: 5,
-    name: "Sahroon Mohideen",
+    name: "Sarhoon Mohideen",
     position: "",
     education:
       "BA Economics, PGD Strategic Management, MSc Agricultural Economics, MAED, currently pursuing LLB, with 10 years’ financial sector experience in Dubai.",
     description:
-      "Sahroon is a finance professional with a diverse academic background, holding a BA in Economics, a Postgraduate Diploma in Strategic Management, an MSc in Agricultural Economics, and an MA in Education. Currently pursuing an LLB, he brings a strong foundation in economics, strategy, and education, complemented by 10 years of financial sector experience in Dubai. His expertise spans financial analysis, strategic planning, and educational leadership, making him a valuable asset in driving business growth and innovation.",
+      "Sarhoon is a finance professional with a diverse academic background, holding a BA in Economics, a Postgraduate Diploma in Strategic Management, an MSc in Agricultural Economics, and an MA in Education. Currently pursuing an LLB, he brings a strong foundation in economics, strategy, and education, complemented by 10 years of financial sector experience in Dubai. His expertise spans financial analysis, strategic planning, and educational leadership, making him a valuable asset in driving business growth and innovation.",
     image: sil,
     link: "#",
   },
