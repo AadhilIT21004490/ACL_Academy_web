@@ -32,13 +32,9 @@ const contactInfo: ContactItem[] = [
     text: "We are available for live chat via Whatsapp.",
   },
   {
-    icon: "icon-time",
-    title: "Contact Hours",
-    text: (
-      <>
-        10:00 AM - 6:00 PM <br /> Monday - Friday
-      </>
-    ),
+    icon: "icon-live-chat",
+    title: "Need more help?",
+    text: "Kindly submit your inquiries using this contact form",
   },
 ];
 

@@ -10,7 +10,7 @@ interface CounterItem {
 }
 
 const counterData: CounterItem[] = [
-    { id: 1, stop: 36, text: 'Practical Learning Hours', delay: 2 },
+    { id: 1, stop: 50, text: 'Practical Learning Hours', delay: 2 },
     { id: 2, stop: 98, text: 'Career Advancement Rate', delay: 1.5 },
     { id: 3, stop: 15, text: 'Real-World Case Studies', delay: 3 },
     { id: 4, stop: 100, text: 'Students', delay: 2.5 },

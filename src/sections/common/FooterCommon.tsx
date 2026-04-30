@@ -81,7 +81,7 @@ const FooterCommon: React.FC = () => {
                                                     </div>
                                                     <div className="text">
                                                         <p>
-                                                            <a href="mailto:support@domain.com">aclacademy123@gmail.com</a>
+                                                            <a href="mailto:aclacademy123@gmail.com">aclacademy123@gmail.com</a>
                                                         </p>
                                                     </div>
                                                 </li>
