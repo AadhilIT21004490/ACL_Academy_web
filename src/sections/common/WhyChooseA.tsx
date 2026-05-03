@@ -53,6 +53,14 @@ const WhyChooseA: React.FC = () => {
                   />
                 </h3>
               </div>
+              <h2 className="section-title-two__title-about title-animation">
+                <TextAnimation text="Our" textColor="black" isSpan={false} />
+                <TextAnimation
+                  text="Vision"
+                  isSpan={false}
+                  textColor="#6232F8"
+                />
+              </h2>
 
               <p className="why-choose-four__text">
                 <strong>Our Vision is</strong> To become a leading global
@@ -73,9 +81,9 @@ const WhyChooseA: React.FC = () => {
                 practical, job-ready skills across the built environment by
                 delivering training that reflects real project environments,
                 enhanced with modern tools, digital workflows, and Artificial
-                Intelligence.<br/><br/>
+                Intelligence.<br /><br />
               </p>
-              <p><strong>We aim to :</strong><br/><br/></p>
+              <p><strong>We aim to :</strong><br /><br /></p>
               <div className="portfolio-details__points-box">
                 {/* Split challenge points in half */}
                 <ul className="portfolio-details__points-list list-unstyled">

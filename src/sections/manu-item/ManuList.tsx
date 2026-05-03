@@ -54,7 +54,7 @@ const ManuList: React.FC = () => {
                 </ul>
             </li> */}
             <li className={`${isCurrent(["/blog"]) ? 'current' : ''}`}>
-                <Link href="/inner/blog">Blogs</Link>
+                <Link href="/inner/blog">Latest Updates</Link>
             </li>
             <li className={`${isCurrent(["/contact"]) ? 'current' : ''}`}>
                 <Link href="/inner/contact">Contact</Link>

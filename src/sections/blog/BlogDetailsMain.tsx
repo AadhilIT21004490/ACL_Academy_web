@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import BlogListSidebar from "./BlogListSidebar";
 
 export interface Author {
@@ -24,12 +25,21 @@ interface Props {
   post: BlogPost;
 }
 
+const WHATSAPP_NUMBER = "+94763136718"; // Replace with your WhatsApp number (country code + number, no + or spaces)
+
 const BlogDetailsMain: React.FC<Props> = ({ post }) => {
-  // Helper to split the large excerpt text into chunks for better styling
-  // This assumes headers are separated by newlines in your JSON
+  const pathname = usePathname();
+
+  const handleEnroll = () => {
+    const pageUrl = `${window.location.origin}${pathname}`;
+    const message = encodeURIComponent(
+      `Hi! I'd like to enroll for this course:\n${pageUrl}`
+    );
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
+  };
+
   const renderContent = (text: string) => {
     return text.split("\n\n").map((chunk, index) => {
-      // If the chunk is short, assume it's a heading
       if (chunk.length < 60 && !chunk.includes(" ")) {
         return <h3 key={index} className="blog-details__title-2">{chunk}</h3>;
       }
@@ -44,7 +54,7 @@ const BlogDetailsMain: React.FC<Props> = ({ post }) => {
           <div className="col-xl-8 col-lg-7">
             <div className="blog-details__left">
               <div className="blog-details__img">
-                <Image src={post.mainImage} width={745} height={380} alt={post.title} />
+                <Image src={post.mainImage} width={1080} height={780} alt={post.title} />
               </div>
 
               <div className="blog-details__content">
@@ -64,11 +74,20 @@ const BlogDetailsMain: React.FC<Props> = ({ post }) => {
                       <h4>{post.date}</h4>
                     </div>
                   </li>
+                  <li>
+                    <div className="main-menu-two__btn-box">
+                      <button
+                        onClick={handleEnroll}
+                        className="thm-btn thm-btn-two main-menu-two__btn"
+                      >
+                        Enroll
+                      </button>
+                    </div>
+                  </li>
                 </ul>
 
                 <h3 className="blog-details__title-1">{post.title}</h3>
-                
-                {/* Render the dynamic content */}
+
                 {renderContent(post.description)}
 
                 <div className="blog-details__tag-and-share">
@@ -81,13 +100,6 @@ const BlogDetailsMain: React.FC<Props> = ({ post }) => {
                         </li>
                       ))}
                     </ul>
-                  </div>
-                  <div className="blog-details__share">
-                    <span className="blog-details__share-title">Share:</span>
-                    <div className="blog-details__share-list">
-                      <Link href="#"><span className="icon-linkedin"></span></Link>
-                      <Link href="#"><span className="icon-facebook"></span></Link>
-                    </div>
                   </div>
                 </div>
               </div>

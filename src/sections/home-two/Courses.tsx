@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'; 
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import { courses } from '@/contents/blog/blog';
 import { BlogPost } from '@/contents/blog/blogType';
@@ -50,13 +50,13 @@ const Courses: React.FC = () => {
                                             </p>
                                         </div>
                                         <div className="blog-two__content-inner">
-                                            <ul className="list-unstyled blog-two__tag">
+                                            {/* <ul className="list-unstyled blog-two__tag">
                                                 {post.tags.map((tag, i) => (
                                                     <li key={i}>
                                                         <p>{tag}</p>
                                                     </li>
                                                 ))}
-                                            </ul>
+                                            </ul> */}
                                             <h3 className="blog-two__title">
                                                 <Link href={post.link}>{post.title}</Link>
                                             </h3>
