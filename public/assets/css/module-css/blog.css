@@ -663,6 +663,15 @@
     border-radius: 16px;
 }
 
+/* Mobile-specific fix */
+@media (max-width: 768px) {
+    .blog-details__img img {
+        max-height: 380px;
+        object-fit: cover;
+        object-position: top center; /* keeps the face/subject visible */
+    }
+}
+
 .blog-details__content {
     position: relative;
     display: block;

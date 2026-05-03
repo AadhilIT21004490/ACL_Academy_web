@@ -30,7 +30,7 @@ const BlogListMain: React.FC = () => {
                                 <div key={blog.id} className="blog-list__single">
                                     <div className="blog-list__img-box">
                                         <div className="blog-list__img">
-                                            <Image src={blog.mainImage} width={692} height={361} alt={blog.title} />
+                                            <Image src={blog.mainImage} width={692} height={661} alt={blog.title} />
                                             <div className="blog-list__plus">
                                                 <Link href={`/inner/blog/${blog.id}`}>
                                                     <span className="icon-plus"></span>
