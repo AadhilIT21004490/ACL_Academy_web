@@ -38,15 +38,6 @@ const BlogDetailsMain: React.FC<Props> = ({ post }) => {
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
   };
 
-  const renderContent = (text: string) => {
-    return text.split("\n\n").map((chunk, index) => {
-      if (chunk.length < 60 && !chunk.includes(" ")) {
-        return <h3 key={index} className="blog-details__title-2">{chunk}</h3>;
-      }
-      return <p key={index} className="blog-details__text-1">{chunk}</p>;
-    });
-  };
-
   return (
     <section className="blog-details">
       <div className="container">
@@ -88,7 +79,16 @@ const BlogDetailsMain: React.FC<Props> = ({ post }) => {
 
                 <h3 className="blog-details__title-1">{post.title}</h3>
 
-                {renderContent(post.description)}
+                <div
+                  className="blog-details__text-1"
+                  style={{
+                    overflowWrap: "break-word",
+                    wordWrap: "break-word",
+                    wordBreak: "break-word",
+                    maxWidth: "100%"
+                  }}
+                  dangerouslySetInnerHTML={{ __html: post.description.replace(/&nbsp;/g, ' ') }}
+                />
 
                 <div className="blog-details__tag-and-share">
                   <div className="blog-details__tag">

@@ -1,17 +1,36 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import blogStar from "../../../public/assets/images/shapes/blog-one-star.png";
 import Image from "next/image";
 import Link from "next/link";
-import { blogPosts, BlogPost } from "@/data/events";
+import { BlogPost } from "@/data/events";
 
 const BlogDetailsCarousel: React.FC = () => {
     const [swiperInstance, setSwiperInstance] = useState<SwiperType | null>(null);
+    const [blogs, setBlogs] = useState<BlogPost[]>([]);
+    const [loading, setLoading] = useState(true);
 
-    const displayPosts = [...blogPosts]
+    useEffect(() => {
+        const fetchBlogs = async () => {
+            try {
+                const res = await fetch("/api/blogs");
+                const result = await res.json();
+                if (result.success) {
+                    setBlogs(result.data);
+                }
+            } catch (error) {
+                console.error("Failed to fetch blogs:", error);
+            } finally {
+                setLoading(false);
+            }
+        };
+        fetchBlogs();
+    }, []);
+
+    const displayPosts = [...blogs]
         .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
     return (
@@ -36,76 +55,85 @@ const BlogDetailsCarousel: React.FC = () => {
 
                 {/* ===== Blog Carousel ===== */}
                 <div className="blog-one__carousel owl-theme  ">
-                    <Swiper
-                        slidesPerView={3}
-                        spaceBetween={30}
-                        loop={true}
-                        autoplay={{
-                            delay: 3500,
-                            disableOnInteraction: false,
-                        }}
-                        speed={1000}
-                        modules={[Navigation, Autoplay]}
-                        onSwiper={setSwiperInstance}
-                        breakpoints={{
-                            320: { slidesPerView: 1, spaceBetween: 10 },
-                            640: { slidesPerView: 2, spaceBetween: 20 },
-                            1024: { slidesPerView: 3, spaceBetween: 30 },
-                        }}
-                    >
-                        {displayPosts.map((blog: BlogPost) => (
-                            <SwiperSlide className="item" key={blog.id}>
-                                <div className="blog-one__single">
-                                    {/* Image */}
-                                    <div className="blog-one__img">
-                                        <Image src={blog.mainImage} width={370} height={252} alt={blog.title} />
-                                        <div className="blog-one__plus">
-                                            <Link href={`/inner/blog/${blog.id}`}>
-                                                <span className="icon-plus"></span>
-                                            </Link>
+                    {loading ? (
+                        <div className="text-center py-5">Loading...</div>
+                    ) : (
+                        <Swiper
+                            slidesPerView={3}
+                            spaceBetween={30}
+                            loop={displayPosts.length > 3}
+                            autoplay={{
+                                delay: 3500,
+                                disableOnInteraction: false,
+                            }}
+                            speed={1000}
+                            modules={[Navigation, Autoplay]}
+                            onSwiper={setSwiperInstance}
+                            breakpoints={{
+                                320: { slidesPerView: 1, spaceBetween: 10 },
+                                640: { slidesPerView: 2, spaceBetween: 20 },
+                                1024: { slidesPerView: 3, spaceBetween: 30 },
+                            }}
+                        >
+                            {displayPosts.map((blog: BlogPost) => (
+                                <SwiperSlide className="item" key={blog.id}>
+                                    <div className="blog-one__single">
+                                        {/* Image */}
+                                        <div className="blog-one__img">
+                                            <Image src={blog.mainImage} width={370} height={252} alt={blog.title} />
+                                            <div className="blog-one__plus">
+                                                <Link href={`/inner/blog/${blog.id}`}>
+                                                    <span className="icon-plus"></span>
+                                                </Link>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    {/* Content */}
-                                    <div className="blog-one__content">
-                                        <h3 className="blog-one__title">
-                                            <Link href={`/inner/blog/${blog.id}`}>{blog.title}</Link>
-                                        </h3>
-                                        <p className="blog-one__text">{blog.description.slice(0, 100)}...</p>
+                                        {/* Content */}
+                                        <div className="blog-one__content">
+                                            <h3 className="blog-one__title">
+                                                <Link href={`/inner/blog/${blog.id}`}>{blog.title}</Link>
+                                            </h3>
 
-                                        {/* User Info */}
-                                        <div className="blog-one__user">
+                                            <p className="blog-two__text">
+                                                {blog.description.replace(/<[^>]*>?/gm, '').replace(/&nbsp;/g, ' ').slice(0, 100)}...
+                                            </p>
 
-                                            <div className="blog-one__user-content">
-                                                <h5 className="blog-one__user-name">
-                                                    <Link href={`/inner/blog/${blog.id}`}>{blog.author.name}</Link>
-                                                </h5>
-                                                <p className="blog-one__date">{blog.date}</p>
+                                            {/* User Info */}
+                                            <div className="blog-one__user">
+
+                                                <div className="blog-one__user-content">
+                                                    <h5 className="blog-one__user-name">
+                                                        <Link href={`/inner/blog/${blog.id}`}>{blog.author.name}</Link>
+                                                    </h5>
+                                                    <p className="blog-one__date">{blog.date}</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-                    <div className="owl-nav-custom" style={{ zIndex: 111 }}>
-                        <button
-                            onClick={() => swiperInstance?.slidePrev()}
-                            className="owl-prev"
-                            aria-label="Previous Slide"
-                            type="button"
-                        >
-                            <span className="icon-left-arrow"></span>
-                        </button>
-                        <button
-                            onClick={() => swiperInstance?.slideNext()}
-                            className="owl-next"
-                            aria-label="Next Slide"
-                            type="button"
-                        >
-                            <span className="icon-right-arrow"></span>
-                        </button>
-                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    )}
+                    {!loading && displayPosts.length > 3 && (
+                        <div className="owl-nav-custom" style={{ zIndex: 111 }}>
+                            <button
+                                onClick={() => swiperInstance?.slidePrev()}
+                                className="owl-prev"
+                                aria-label="Previous Slide"
+                                type="button"
+                            >
+                                <span className="icon-left-arrow"></span>
+                            </button>
+                            <button
+                                onClick={() => swiperInstance?.slideNext()}
+                                className="owl-next"
+                                aria-label="Next Slide"
+                                type="button"
+                            >
+                                <span className="icon-right-arrow"></span>
+                            </button>
+                        </div>
+                    )}
                 </div>
             </div>
         </section>
