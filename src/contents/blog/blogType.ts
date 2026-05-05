@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 
 export interface BlogPost {
-    id: number;
+    id: string;
     image: string | StaticImageData;
     date: string;
     tags: string[];
@@ -11,7 +11,7 @@ export interface BlogPost {
 }
 
 export interface BlogPage {
-    id: number;
+    id: string;
     image: string | StaticImageData;
     date: string;
     tags: string[];
@@ -21,7 +21,7 @@ export interface BlogPage {
 }
 
 export interface BlogsListItem {
-    id: number;
+    id: string;
     title: string;
     description: string;
     date: string;
@@ -34,7 +34,7 @@ export interface BlogsListItem {
 }
 
 export interface BlogCarouselItem {
-    id: number;
+    id: string;
     title: string;
     description: string;
     image: string | StaticImageData;
@@ -46,7 +46,7 @@ export interface BlogCarouselItem {
 }
  
 export interface BlogOnePost {
-    id: number;
+    id: string;
     image: string | StaticImageData;
     tags: string[];
     title: string;

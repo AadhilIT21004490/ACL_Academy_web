@@ -37,7 +37,7 @@ import userImg3 from "../../../public/assets/images/blog/blog-one-user-1-3.jpg";
 
 export const courses: BlogPost[] = [
   {
-    id: 1,
+    id: "1",
     image: blogPostImg2,
     date: "August 20, 2025",
     tags: ["QS", "★", "Tender evaluation"],
@@ -47,7 +47,7 @@ export const courses: BlogPost[] = [
     link: "/inner/quantity-surveying",
   },
   {
-    id: 2,
+    id: "2",
     image: blogPostImg1,
     date: "March 15, 2025",
     tags: ["MRICS", "★", "Membership preparation"],
@@ -57,7 +57,7 @@ export const courses: BlogPost[] = [
     link: "/inner/rics-coaching",
   },
   {
-    id: 3,
+    id: "3",
     image: blogPostImg3,
     date: "July 10, 2025",
     tags: ["Ai", "★", "Ai Agents"],
@@ -67,7 +67,7 @@ export const courses: BlogPost[] = [
     link: "/inner/ai-qs",
   },
   {
-    id: 4,
+    id: "4",
     image: blogPostImg3,
     date: "July 10, 2025",
     tags: ["Ai", "★", "Ai Agents"],
@@ -80,7 +80,7 @@ export const courses: BlogPost[] = [
 
 export const blogPosts: BlogPost[] = [
   {
-    id: 1,
+    id: "1",
     image: blogPostImg2,
     date: "August 20, 2025",
     tags: ["Productivity", "★", "Tech Innovation"],
@@ -90,7 +90,7 @@ export const blogPosts: BlogPost[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 2,
+    id: "2",
     image: blogPostImg1,
     date: "March 15, 2025",
     tags: ["Technology", "★", "Wellness"],
@@ -100,7 +100,7 @@ export const blogPosts: BlogPost[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 3,
+    id: "3",
     image: blogPostImg3,
     date: "July 10, 2025",
     tags: ["Sustainability", "★", "Eco-Friendly"],
@@ -110,7 +110,7 @@ export const blogPosts: BlogPost[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 4,
+    id: "4",
     image: blogPostImg1,
     date: "October 2, 2025",
     tags: ["AI", "★", "Innovation"],
@@ -123,7 +123,7 @@ export const blogPosts: BlogPost[] = [
 
 export const blogs: BlogPage[] = [
   {
-    id: 1,
+    id: "1",
     image: blogImg1,
     date: "August 20, 2025",
     tags: ["Productivity", "★", "Tech Innovation"],
@@ -133,7 +133,7 @@ export const blogs: BlogPage[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 2,
+    id: "2",
     image: blogImg2,
     date: "March 15, 2025",
     tags: ["Technology", "★", "Tech Innovation"],
@@ -143,7 +143,7 @@ export const blogs: BlogPage[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 3,
+    id: "3",
     image: blogImg3,
     date: "August 20, 2025",
     tags: ["Productivity", "★", "Tech Innovation"],
@@ -152,7 +152,7 @@ export const blogs: BlogPage[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 4,
+    id: "4",
     image: blogImg4,
     date: "October 3, 2025",
     tags: ["Marketing", "★", "Digital Growth"],
@@ -162,7 +162,7 @@ export const blogs: BlogPage[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 5,
+    id: "5",
     image: blogImg5,
     date: "March 3, 2025",
     tags: ["Content", "★", "Creativity"],
@@ -172,7 +172,7 @@ export const blogs: BlogPage[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 6,
+    id: "6",
     image: blogImg6,
     date: "April 3, 2025",
     tags: ["Business", "★", "Finance"],
@@ -182,7 +182,7 @@ export const blogs: BlogPage[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 7,
+    id: "7",
     image: blogImg7,
     date: "Sept 5, 2025",
     tags: ["Productivity", "★", "Tech Innovation"],
@@ -193,7 +193,7 @@ export const blogs: BlogPage[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 8,
+    id: "8",
     image: blogImg8,
     date: "Sept 12, 2025",
     tags: ["Marketing", "★", "Innovation"],
@@ -203,7 +203,7 @@ export const blogs: BlogPage[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 9,
+    id: "9",
     image: blogImg9,
     date: "Nov 26, 2025",
     tags: ["Tech", "★", "Digital Trends"],
@@ -216,7 +216,7 @@ export const blogs: BlogPage[] = [
 
 export const blogPostsThree: BlogPost[] = [
   {
-    id: 1,
+    id: "1",
     image: blogImg1,
     date: "August 20, 2025",
     tags: ["Productivity", "★", "Tech Innovation"],
@@ -226,7 +226,7 @@ export const blogPostsThree: BlogPost[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 2,
+    id: "2",
     image: blogImg2,
     date: "March 15, 2025",
     tags: ["Technology", "★", "Wellness"],
@@ -236,7 +236,7 @@ export const blogPostsThree: BlogPost[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 3,
+    id: "3",
     image: blogImg3,
     date: "July 10, 2025",
     tags: ["Sustainability", "★", "Eco-Friendly"],
@@ -249,7 +249,7 @@ export const blogPostsThree: BlogPost[] = [
 
 export const blogsListItems: BlogsListItem[] = [
   {
-    id: 1,
+    id: "1",
     title:
       "Mastering the Art of Adapting to Changing Digital Marketing Algorithms",
     description:
@@ -263,7 +263,7 @@ export const blogsListItems: BlogsListItem[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 2,
+    id: "2",
     title:
       "Balancing Your Digital Marketing Budget: Strategies for Maximizing ROI",
     description:
@@ -277,7 +277,7 @@ export const blogsListItems: BlogsListItem[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 3,
+    id: "3",
     title:
       "Standing Out in a Competitive Market: Strategies for Differentiation",
     description:
@@ -291,7 +291,7 @@ export const blogsListItems: BlogsListItem[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 4,
+    id: "4",
     title:
       "Future of AI in Marketing: How Machine Learning is Changing Everything",
     description:
@@ -308,7 +308,7 @@ export const blogsListItems: BlogsListItem[] = [
 
 export const blogCarouselData: BlogCarouselItem[] = [
   {
-    id: 1,
+    id: "1",
     title: "Top Strategies for Effective Time Management",
     description:
       "Discover actionable tips and techniques to enhance your productivity and manage your",
@@ -320,7 +320,7 @@ export const blogCarouselData: BlogCarouselItem[] = [
     link: "/inner/blog-list",
   },
   {
-    id: 2,
+    id: "2",
     title: "The Future of Technology: Emerging Trends to Watch in 2025",
     description:
       "Explore the latest technology innovations shaping the future and how they’ll impact everyday life.",
@@ -332,7 +332,7 @@ export const blogCarouselData: BlogCarouselItem[] = [
     link: "/inner/blog-list",
   },
   {
-    id: 3,
+    id: "3",
     title:
       "Healthy Eating Made Simple: Quick and Nutritious Recipes for Busy Lives",
     description:
@@ -345,7 +345,7 @@ export const blogCarouselData: BlogCarouselItem[] = [
     link: "/inner/blog-list",
   },
   {
-    id: 4,
+    id: "4",
     title:
       "Healthy Eating Made Simple: Quick and Nutritious Recipes for Busy Lives",
     description:
@@ -361,7 +361,7 @@ export const blogCarouselData: BlogCarouselItem[] = [
 
 export const blogOnePosts: BlogOnePost[] = [
   {
-    id: 1,
+    id: "1",
     image: blogCarouselImg1,
     tags: ["Digital", "Technology"],
     title: "Top Strategies for Effective Time Management",
@@ -374,7 +374,7 @@ export const blogOnePosts: BlogOnePost[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 2,
+    id: "2",
     image: blogCarouselImg2,
     tags: ["Digital", "Technology"],
     title: "The Future of Technology Emerging Trends to Watch in 2025",
@@ -387,7 +387,7 @@ export const blogOnePosts: BlogOnePost[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 3,
+    id: "3",
     image: blogCarouselImg3,
     tags: ["Digital", "Technology"],
     title: "Healthy Eating Made Simple Quick and Nutritious Recipes for",
@@ -400,7 +400,7 @@ export const blogOnePosts: BlogOnePost[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 4,
+    id: "4",
     image: blogCarouselImg1,
     tags: ["Digital", "Technology"],
     title: "Top Strategies for Effective Time Management",
@@ -413,7 +413,7 @@ export const blogOnePosts: BlogOnePost[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 5,
+    id: "5",
     image: blogCarouselImg2,
     tags: ["Digital", "Technology"],
     title: "The Future of Technology Emerging Trends to Watch in 2025",
@@ -426,7 +426,7 @@ export const blogOnePosts: BlogOnePost[] = [
     link: "/inner/blog-details",
   },
   {
-    id: 6,
+    id: "6",
     image: blogCarouselImg3,
     tags: ["Digital", "Technology"],
     title: "Healthy Eating Made Simple Quick and Nutritious Recipes for",
