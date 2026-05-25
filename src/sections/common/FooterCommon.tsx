@@ -99,10 +99,10 @@ const FooterCommon: React.FC = () => {
                                             <div className="site-footer-two__social-box">
                                                 <p className="site-footer-two__social-title">Follow Us</p>
                                                 <div className="site-footer-two__social">
-                                                    <Link href="https://web.facebook.com/people/ACL-Academy/61581348707450/">
+                                                    <Link href="https://web.facebook.com/people/ACL-Academy/61581348707450/" target="_blank">
                                                         <i className="icon-facebook"></i>
                                                     </Link>
-                                                    <Link href="https://www.linkedin.com/company/acl-academy1/">
+                                                    <Link href="https://www.linkedin.com/company/acl-academy1/" target="_blank">
                                                         <i className="icon-linkedin"></i>
                                                     </Link>
 

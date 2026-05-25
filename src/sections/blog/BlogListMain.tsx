@@ -81,8 +81,8 @@ const BlogListMain: React.FC = () => {
                                                 <Link href={`/inner/blog/${blog.id}`}>{blog.title}</Link>
                                             </h3>
 
-                                            <p className="blog-list__text">
-                                                {blog.description.slice(0, 150)}...
+                                            <p className="blog-two__text">
+                                                {blog.description.replace(/<[^>]*>?/gm, '').replace(/&nbsp;/g, ' ').slice(0, 100)}...
                                             </p>
 
                                             <div className="blog-list__client-info">

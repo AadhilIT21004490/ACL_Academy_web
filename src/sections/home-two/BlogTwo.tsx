@@ -46,15 +46,15 @@ const BlogTwo: React.FC = () => {
             <div className="container">
                 {/* Section Title */}
                 <div className="section-title-two text-center sec-title-animation animation-style1">
-                    <div className="section-title-two__tagline-box justify-content-center">
+                    {/* <div className="section-title-two__tagline-box justify-content-center">
                         <div className="section-title-two__tagline-icon-box">
                             <div className="section-title-two__tagline-icon-1"></div>
                             <div className="section-title-two__tagline-icon-2"></div>
                         </div>
                         <span className="section-title-two__tagline">Webinar</span>
-                    </div>
+                    </div> */}
                     <h2 className="section-title-two__title title-animation">
-                        <TextAnimation text='Check out our webinars to learn' textColor='black' isSpan={false} />
+                        <TextAnimation text='Check out our Latest Updates' textColor='black' isSpan={false} />
                         <TextAnimation text={`more about latest trends.`} textColor='#6232F8' isSpan={false} />
                     </h2>
                 </div>

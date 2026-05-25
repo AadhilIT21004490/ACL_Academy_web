@@ -30,9 +30,7 @@ const AIQS: React.FC = () => {
                     {/* LEFT SIDE */}
                     <div className="col-xl-8 col-lg-7">
                         <div className="services-details__left">
-                            <div className="services-details__img">
-                                <Image src={serviceImg1} width={850} height={400} alt="AI-Powered Quantity Surveying" />
-                            </div>
+                            
 
                             <div className="services-details__content">
                                 <h3 className="services-details__title-1">
@@ -60,25 +58,6 @@ const AIQS: React.FC = () => {
                                     </ul>
                                 </div>
 
-                                {/* SERVICE BOXES */}
-                                {/* <div className="services-details__single-service-box">
-                                    <div className="row">
-                                        {[{ icon: icon1, text: "Market Trend Analysis" },
-                                        { icon: icon2, text: "Competitor Strategy" },
-                                        { icon: icon3, text: "Audience Behavior Research" },
-                                        { icon: icon4, text: "Custom Campaign Development" }].map((item, i) => (
-                                            <div key={i} className="col-xl-3 col-lg-6 col-md-6">
-                                                <div className="services-details__single-service">
-                                                    <div className="services-details__single-icon">
-                                                        <Image src={item.icon} width={41} height={40} alt={item.text} />
-                                                    </div>
-                                                    <p>{item.text}</p>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div> */}
-
                                 {/* PROGRESS SECTION */}
                                 <div className="services-details__progress-box">
                                     <div className="row">
@@ -92,12 +71,7 @@ const AIQS: React.FC = () => {
                                 </div>
 
                                 <h3 className="services-details__title-3">Why choose us?</h3>
-                                {/* <p className="services-details__text-3">
-                                    Tailored strategies and campaigns crafted to address your specific business objectives
-                                    and requirements. Our team of skilled professionals boasts a proven history of success
-                                    in digital marketing and social media. We leverage the latest technology and tools to
-                                    enhance the effectiveness of your campaigns.
-                                </p> */}
+                                
 
                                 {/* WHY OUR SERVICES POINTS */}
                                 <div className="services-details__points-and-img">
@@ -112,15 +86,21 @@ const AIQS: React.FC = () => {
                                             </ul>
                                         </div>
 
-                                        <div className="col-xl-6">
-                                            <div className="services-details__points-img">
-                                                <Image src={pointsImg} width={379} height={323} alt="Service Points" />
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
 
-                                <p className="services-details__text-4">
+                                <div style={{
+                                backgroundColor: '#fff6ed',          // Very light slate/gray background
+                                border: '1px solid #e2e8f0',        // Clean, subtle border
+                                borderLeft: '4px solid #e96c1b',    // Vibrant blue left accent bar for that "highlight" look
+                                borderRadius: '12px',               // Modern, smooth rounded corners
+                                padding: '24px',                    // Generous breathing room inside the box
+                                boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05)', // Soft modern shadow
+                                margin: '20px 0'                    // Spacing above and below the div
+                                }}>
+                                <h3 className="services-details__title-4">ACL Academy's unique approach</h3>
+                                <p className="services-details__text-4" style={{ margin: 0 }}>
                                     Additionally, ACL Academy stands out for its commitment to 
                                     personalized mentorship and continuous support throughout the 
                                     training journey. Learners benefit from one-on-one guidance, 
@@ -130,6 +110,7 @@ const AIQS: React.FC = () => {
                                     but also develops the confidence and adaptability needed to excel 
                                     in diverse construction industry roles.
                                 </p>
+                                </div>
 
                                 <div className="services-details__img-two">
                                     <Image src={serviceImg2} width={850} height={299} alt="Service Details" />

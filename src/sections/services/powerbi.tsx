@@ -1,17 +1,9 @@
 import React from "react";
-
-import serviceImg1 from "../../../public/assets/images/qs.jpg";
 import serviceImg2 from "../../../public/assets/images/qs3.jpg";
-import pointsImg from "../../../public/assets/images/qs2.jpg";
-import icon1 from "../../../public/assets/images/icon/services-details-icon-1.png";
-import icon2 from "../../../public/assets/images/icon/services-details-icon-2.png";
-import icon3 from "../../../public/assets/images/icon/services-details-icon-3.png";
-import icon4 from "../../../public/assets/images/icon/services-details-icon-4.png";
 import Image from "next/image";
-import ProgressBarItem from "@/components/elements/Progresbar";
 import Link from "next/link";
 import ServicesList from "../common/ServicesList";
-import Module from "../modules/module";
+import Module from "../modules/powerbimodule";
 interface Skill {
     name: string;
     percent: number;
@@ -22,7 +14,7 @@ const skills: Skill[] = [
     { name: "Industry-Relevant Skills", percent: 98 },
 ];
 
-const DigitalMain: React.FC = () => {
+const PowerBi: React.FC = () => {
     return (
         <section className="services-details">
             <div className="container">
@@ -30,59 +22,33 @@ const DigitalMain: React.FC = () => {
                     {/* LEFT SIDE */}
                     <div className="col-xl-8 col-lg-7">
                         <div className="services-details__left">
-                            {/* <div className="services-details__img">
-                                <Image src={serviceImg1} width={850} height={400} alt="Quantity Surveying" />
-                            </div> */}
+                            
 
                             <div className="services-details__content">
                                 <h3 className="services-details__title-1">
-                                    Master Quantity Surveying with Real-World Industry Practice | ACL Academy
+                                   Power BI for Quantity Surveyors | Construction Analytics | ACL Academy
                                 </h3>
 
                                 <div className="services-details__shape-1"></div>
 
                                 <p className="services-details__text-1">
-                                    ACL Academy offers a comprehensive Quantity Surveying Practical Training Program designed to prepare students and professionals for real-world construction industry challenges. Our practical QS classes combine technical knowledge, real project experience, and career-focused training to help learners build the skills required to succeed as professional Quantity Surveyors.
-                                </p>
+                                    At ACL Academy, we have partnered with NexAI – Sri Lanka’s leading AI education platform to bring a next-generation learning experience for Quantity Surveyors. Upgrade your Quantity Surveying career with AI-powered skills at ACL Academy. Learn core QS fundamentals and integrate advanced AI tools through our partnership with NexAI to become a future-ready Quantity Surveyor.</p><br/>
                                 <p>
-                                    Whether you are a student, graduate, or industry professional, our program helps you gain practical knowledge in measurement, cost estimation, contract administration, and project cost management used in real construction projects.
-                                    Through interactive classes, case studies, and practical exercises, participants develop strong analytical thinking and professional confidence required in contractor, consultant, and client-side roles.
-                                </p>
+                                    Gain hands-on experience with real-world applications of AI in cost estimation, quantity take-offs, data analysis, and project decision-making. Our structured approach ensures you not only understand traditional QS practices but also learn how to enhance accuracy, efficiency, and productivity using modern AI-driven workflows—giving you a competitive edge in the evolving construction industry.</p>
 
-                                <h3 className="services-details__title-2">What Makes This Program Different</h3>
-                        
+                                <h3 className="services-details__title-2"> Why This Module Is Important?</h3>
+                                <p className="services-details__text-1">The future Quantity Surveyor is not just technical —
+                                they are digital, analytical, and AI-enabled.<br/><strong>This module ensures you:</strong>
+                                </p>
                                 {/* FEATURES LIST */}
                                 <div className="services-details__points-box">
                                     <ul className="services-details__points-list list-unstyled">
-                                        <li><span className="icon-check"></span> Real project-based learning</li>
-                                        <li><span className="icon-check"></span> Company-style practical environment</li>
-                                        <li><span className="icon-check"></span> Hands-on exercises (not theory-based learning)</li>
-                                    </ul>
-
-                                    <ul className="services-details__points-list list-unstyled">
-                                        <li><span className="icon-check"></span> Group discussions & communication training</li>
-                                        <li><span className="icon-check"></span> Designed for Gulf / international standards</li>
+                                        <li><span className="icon-check"></span> Stay ahead of industry transformation</li>
+                                        <li><span className="icon-check"></span> Increase your productivity</li>
+                                        <li><span className="icon-check"></span> Deliver smarter commercial decisions</li>
+                                
                                     </ul>
                                 </div>
-
-                                {/* SERVICE BOXES */}
-                                {/* <div className="services-details__single-service-box">
-                                    <div className="row">
-                                        {[{ icon: icon1, text: "Market Trend Analysis" },
-                                        { icon: icon2, text: "Competitor Strategy" },
-                                        { icon: icon3, text: "Audience Behavior Research" },
-                                        { icon: icon4, text: "Custom Campaign Development" }].map((item, i) => (
-                                            <div key={i} className="col-xl-3 col-lg-6 col-md-6">
-                                                <div className="services-details__single-service">
-                                                    <div className="services-details__single-icon">
-                                                        <Image src={item.icon} width={41} height={40} alt={item.text} />
-                                                    </div>
-                                                    <p>{item.text}</p>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div> */}
 
                                 {/* PROGRESS SECTION */}
                                 <div className="services-details__progress-box">
@@ -112,15 +78,11 @@ const DigitalMain: React.FC = () => {
                                             </ul>
                                         </div>
 
-                                        <div className="col-xl-6">
-                                            <div className="services-details__points-img">
-                                                <Image src={pointsImg} width={379} height={323} alt="Service Points" />
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
 
-                               <div style={{
+                                <div style={{
                                 backgroundColor: '#fff6ed',          // Very light slate/gray background
                                 border: '1px solid #e2e8f0',        // Clean, subtle border
                                 borderLeft: '4px solid #e96c1b',    // Vibrant blue left accent bar for that "highlight" look
@@ -143,13 +105,13 @@ const DigitalMain: React.FC = () => {
                                 </div>
 
                                 <div className="services-details__img-two">
-                                    {/* <Image src={serviceImg2} width={850} height={299} alt="Service Details" /> */}
+                                    <Image src={serviceImg2} width={850} height={299} alt="Service Details" />
                                 </div>
 
-                                <h3 className="services-details__title-4">Start Your Quantity Surveying Career Today:</h3>
+                                <h3 className="services-details__title-4">Advance Your Construction Analytics Career Today:</h3>
                                 <p className="services-details__text-5">
-                                    Take the first step toward building a successful career in the construction and built environment industry.
-                                    Join the <strong>ACL Academy Quantity Surveying Practice</strong> Training Program and gain the skills, industry exposure, and professional confidence required to become a successful Quantity Surveyor.
+                                    Take the definitive next step toward becoming a data-driven commercial leader in the construction and infrastructure sector. 
+                                    Join the <strong>ACL Academy Power BI for Quantity Surveyors & Construction Professionals</strong> program to transform your raw project data into actionable business intelligence, master automated cost tracking, and build elite industry dashboards that secure a modern competitive edge.
                                 </p>
                             </div>
                         </div>
@@ -185,4 +147,4 @@ const DigitalMain: React.FC = () => {
     );
 };
 
-export default DigitalMain;
+export default PowerBi;

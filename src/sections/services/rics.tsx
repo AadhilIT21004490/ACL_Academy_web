@@ -33,10 +33,7 @@ const RICS: React.FC = () => {
                     {/* LEFT SIDE */}
                     <div className="col-xl-8 col-lg-7">
                         <div className="services-details__left">
-                            <div className="services-details__img">
-                                <Image src={serviceImg1} width={850} height={400} alt="Quantity Surveying" />
-                            </div>
-
+                            
                             <div className="services-details__content">
                                 <h3 className="services-details__title-1">
                                     RICS APC Mock Interviews | Real Panel Experience & Confidence Building <br />ACL Academy
@@ -119,15 +116,13 @@ const RICS: React.FC = () => {
                                         </div>
 
                                         <div className="col-xl-6">
-                                            <div className="services-details__points-img">
-                                                <Image src={pointsImg} width={379} height={323} alt="Service Points" />
-                                            </div>
+                                           
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="services-details__img-two">
-                                    <Image src={serviceImg2} width={850} height={299} alt="Service Details" />
+                                    
                                 </div>
 
                                 <h3 className="services-details__title-4">Prepare for your RICS APC with realistic mock interviews</h3>

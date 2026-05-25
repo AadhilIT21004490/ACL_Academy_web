@@ -15,7 +15,7 @@ export const LINKSONE: LINK[] = [
     {
         id: 4,
         link: "/inner/blog",
-        value: "Blog"
+        value: "Latest News"
     },
     {
         id: 5,
@@ -57,13 +57,19 @@ export const LINKTHREE: LINK[] = [
         link: "/inner/rics-coaching",
         value: "RICS APC Mock Interview"
     },
+
     {
         id: 3,
+        link: "/inner/powerbi",
+        value: "Power BI for Quantity Surveyors"
+    },
+    {
+        id: 4,
         link: "/inner/ai-qs",
         value: "AI + Quantity Surveying"
     },
     {
-        id: 4,
+        id: 5,
         link: "/inner/rics-full",
         value: "RICS APC Full Training"
     },
