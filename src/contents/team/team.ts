@@ -41,7 +41,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: 4,
     name: "FATHIMA SHAFNAM JALAL",
-    position: "Manager",
+    position: "Operations Manager",
     education:
       "MSc (Biochemistry & Biotechnology), BSc (Hons) Biomedical Science",
     description:
@@ -99,7 +99,7 @@ export const teamMembersTeamPage: TeamMember[] = [
   {
     id: 4,
     name: "FATHIMA SHAFNAM JALAL",
-    position: "Manager",
+    position: "Operations Manager",
     education:
       "MSc (Biochemistry & Biotechnology), BSc (Hons) Biomedical Science",
     description:

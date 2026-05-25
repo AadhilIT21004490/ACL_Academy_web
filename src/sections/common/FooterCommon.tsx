@@ -23,7 +23,7 @@ const FooterCommon: React.FC = () => {
                         <div className="newsletter-two__left">
                             <h2 className="newsletter-two__title">Lets Talk!</h2>
                             <p className="newsletter-two__text">
-                                Get in tough with us<br /> for more updates.
+                                Get in touch with us<br /> for more updates.
                             </p>
                         </div>
                         <div className="newsletter-two__right">

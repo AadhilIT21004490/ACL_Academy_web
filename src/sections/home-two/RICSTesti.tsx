@@ -8,10 +8,13 @@ import r2 from "../../../public/assets/images/r2.jpeg";
 import r3 from "../../../public/assets/images/r3.jpeg";
 import r4 from "../../../public/assets/images/r4.jpeg";
 import r5 from "../../../public/assets/images/r5.jpeg";
+import r6 from "../../../public/assets/images/r6.jpeg";
+import r7 from "../../../public/assets/images/r7.jpeg";
+import r8 from "../../../public/assets/images/r8.jpeg";
 import TextAnimation from '@/components/elements/TextAnimation';
 import { StaticImageData } from "next/image";
 
-const testimonialImages: StaticImageData[] = [r1, r2, r3, r4, r5];
+const testimonialImages: StaticImageData[] = [r1, r2, r3, r4, r5, r6, r7, r8];
 
 const RICSTesti: React.FC = () => {
     return (

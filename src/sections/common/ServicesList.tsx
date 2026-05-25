@@ -11,6 +11,7 @@ interface Service {
 const services: Service[] = [
     { name: "Quantity Surveying Practice Training", link: "/inner/quantity-surveying" },
     { name: "RICS APC Mock Interview", link: "/inner/rics-coaching" },
+    { name: "Power BI for Quantity Surveyors and Construction Professionals", link: "/inner/powerbi" },
     { name: "AI + Quantity Surveying", link: "/inner/ai-qs" },
     { name: "RICS APC Full Training", link: "/inner/rics-full" },
 ]

@@ -1,18 +1,8 @@
+'use client';
 import React from "react";
-
-import serviceImg1 from "../../../public/assets/images/rics1.jpg";
-import serviceImg2 from "../../../public/assets/images/qs3.jpg";
-import pointsImg from "../../../public/assets/images/qs2.jpg";
-import icon1 from "../../../public/assets/images/icon/services-details-icon-1.png";
-import icon2 from "../../../public/assets/images/icon/services-details-icon-2.png";
-import icon3 from "../../../public/assets/images/icon/services-details-icon-3.png";
-import icon4 from "../../../public/assets/images/icon/services-details-icon-4.png";
-import Image from "next/image";
-import ProgressBarItem from "@/components/elements/Progresbar";
 import Link from "next/link";
 import ServicesList from "../common/ServicesList";
 import Module from "../modules/ricsmodule";
-import RICSTestimonials from "../home-two/RICSTestimonials";
 import RICSTesti from "../home-two/RICSTesti";
 interface Skill {
     name: string;
@@ -47,6 +37,54 @@ const RICS: React.FC = () => {
                                 <p>
                                     Gain hands-on experience with real assessment environments, receive detailed feedback reports after every session, and follow a progressive improvement approach to strengthen your performance. Our expert guidance helps you develop clear communication, structured answers, and the confidence required to succeed in your APC assessment.</p>
 
+                                {/* MODERN BROCHURE DOWNLOAD BUTTON */}
+                                <div style={{ margin: '35px 0' }}>
+                                    <a 
+                                        href="/assets/ACL_RICS Mock_Brochure.pdf" // Change this to your actual file path
+                                        download="ACL_RICS Mock_Brochure.pdf"
+                                        style={{
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            gap: '12px',
+                                            background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)',
+                                            color: '#ffffff',
+                                            fontWeight: '600',
+                                            fontSize: '15px',
+                                            padding: '14px 28px',
+                                            borderRadius: '8px',
+                                            textDecoration: 'none',
+                                            boxShadow: '0 4px 12px rgba(15, 23, 42, 0.15)',
+                                            transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+                                            cursor: 'pointer'
+                                        }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-2px)';
+                                            e.currentTarget.style.boxShadow = '0 6px 20px rgba(15, 23, 42, 0.25)';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = '0 4px 12px rgba(15, 23, 42, 0.15)';
+                                        }}
+                                    >
+                                        {/* Simple inline SVG icon for a document download hook */}
+                                        <svg 
+                                            width="20" 
+                                            height="20" 
+                                            viewBox="0 0 24 24" 
+                                            fill="none" 
+                                            stroke="currentColor" 
+                                            strokeWidth="2.5" 
+                                            strokeLinecap="round" 
+                                            strokeLinejoin="round"
+                                        >
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4" />
+                                            <polyline points="7 10 12 15 17 10" />
+                                            <line x1="12" y1="15" x2="12" y2="3" />
+                                        </svg>
+                                        Download Course Brochure (PDF)
+                                    </a>
+                                </div>
+                                
                                 <h3 className="services-details__title-2">What Makes This Program Different</h3>
 
                                 {/* FEATURES LIST */}
@@ -145,7 +183,7 @@ const RICS: React.FC = () => {
                                 <h3>Contact Us</h3>
                                 <span></span>
                                 <p className="services-details__contact-text">
-                                    Have questions about our Quantity Surveying Practical Training Program?
+                                    Have questions about our RICS APC Mock Interviews Program?
                                     Contact us today
                                 </p>
                                 <div className="services-details__contact-btn-box">

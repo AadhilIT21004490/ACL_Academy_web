@@ -1,14 +1,6 @@
 import React from "react";
-
-import serviceImg1 from "../../../public/assets/images/aiqs1.jpg";
 import serviceImg2 from "../../../public/assets/images/qs3.jpg";
-import pointsImg from "../../../public/assets/images/qs2.jpg";
-import icon1 from "../../../public/assets/images/icon/services-details-icon-1.png";
-import icon2 from "../../../public/assets/images/icon/services-details-icon-2.png";
-import icon3 from "../../../public/assets/images/icon/services-details-icon-3.png";
-import icon4 from "../../../public/assets/images/icon/services-details-icon-4.png";
 import Image from "next/image";
-import ProgressBarItem from "@/components/elements/Progresbar";
 import Link from "next/link";
 import ServicesList from "../common/ServicesList";
 import Module from "../modules/aiqsmodule";
@@ -43,6 +35,8 @@ const AIQS: React.FC = () => {
                                     At ACL Academy, we have partnered with NexAI – Sri Lanka’s leading AI education platform to bring a next-generation learning experience for Quantity Surveyors. Upgrade your Quantity Surveying career with AI-powered skills at ACL Academy. Learn core QS fundamentals and integrate advanced AI tools through our partnership with NexAI to become a future-ready Quantity Surveyor.</p><br/>
                                 <p>
                                     Gain hands-on experience with real-world applications of AI in cost estimation, quantity take-offs, data analysis, and project decision-making. Our structured approach ensures you not only understand traditional QS practices but also learn how to enhance accuracy, efficiency, and productivity using modern AI-driven workflows—giving you a competitive edge in the evolving construction industry.</p>
+
+                                
 
                                 <h3 className="services-details__title-2"> Why This Module Is Important?</h3>
                                 <p className="services-details__text-1">The future Quantity Surveyor is not just technical —
@@ -138,7 +132,7 @@ const AIQS: React.FC = () => {
                                 <h3>Contact Us</h3>
                                 <span></span>
                                 <p className="services-details__contact-text">
-                                    Have questions about our Quantity Surveying Practical Training Program?
+                                    Have questions about our AI-Powered Quantity Surveying Training Program?
                                     Contact us today
                                 </p>
                                 <div className="services-details__contact-btn-box">

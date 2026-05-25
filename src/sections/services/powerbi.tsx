@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import serviceImg2 from "../../../public/assets/images/qs3.jpg";
 import Image from "next/image";
@@ -35,6 +36,54 @@ const PowerBi: React.FC = () => {
                                     At ACL Academy, we have partnered with NexAI – Sri Lanka’s leading AI education platform to bring a next-generation learning experience for Quantity Surveyors. Upgrade your Quantity Surveying career with AI-powered skills at ACL Academy. Learn core QS fundamentals and integrate advanced AI tools through our partnership with NexAI to become a future-ready Quantity Surveyor.</p><br/>
                                 <p>
                                     Gain hands-on experience with real-world applications of AI in cost estimation, quantity take-offs, data analysis, and project decision-making. Our structured approach ensures you not only understand traditional QS practices but also learn how to enhance accuracy, efficiency, and productivity using modern AI-driven workflows—giving you a competitive edge in the evolving construction industry.</p>
+
+                                {/* MODERN BROCHURE DOWNLOAD BUTTON */}
+                                <div style={{ margin: '35px 0' }}>
+                                    <a 
+                                        href="/assets/ACL_PowerBi_Brochure.pdf" // Change this to your actual file path
+                                        download="Power_BI_QS_Brochure.pdf"
+                                        style={{
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            gap: '12px',
+                                            background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)',
+                                            color: '#ffffff',
+                                            fontWeight: '600',
+                                            fontSize: '15px',
+                                            padding: '14px 28px',
+                                            borderRadius: '8px',
+                                            textDecoration: 'none',
+                                            boxShadow: '0 4px 12px rgba(15, 23, 42, 0.15)',
+                                            transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+                                            cursor: 'pointer'
+                                        }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(-2px)';
+                                            e.currentTarget.style.boxShadow = '0 6px 20px rgba(15, 23, 42, 0.25)';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                            e.currentTarget.style.boxShadow = '0 4px 12px rgba(15, 23, 42, 0.15)';
+                                        }}
+                                    >
+                                        {/* Simple inline SVG icon for a document download hook */}
+                                        <svg 
+                                            width="20" 
+                                            height="20" 
+                                            viewBox="0 0 24 24" 
+                                            fill="none" 
+                                            stroke="currentColor" 
+                                            strokeWidth="2.5" 
+                                            strokeLinecap="round" 
+                                            strokeLinejoin="round"
+                                        >
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4" />
+                                            <polyline points="7 10 12 15 17 10" />
+                                            <line x1="12" y1="15" x2="12" y2="3" />
+                                        </svg>
+                                        Download Course Brochure (PDF)
+                                    </a>
+                                </div>
 
                                 <h3 className="services-details__title-2"> Why This Module Is Important?</h3>
                                 <p className="services-details__text-1">The future Quantity Surveyor is not just technical —
@@ -81,6 +130,8 @@ const PowerBi: React.FC = () => {
                                         
                                     </div>
                                 </div>
+
+                                
 
                                 <div style={{
                                 backgroundColor: '#fff6ed',          // Very light slate/gray background
@@ -130,7 +181,7 @@ const PowerBi: React.FC = () => {
                                 <h3>Contact Us</h3>
                                 <span></span>
                                 <p className="services-details__contact-text">
-                                    Have questions about our Quantity Surveying Practical Training Program?
+                                    Have questions about our Power BI Training Program?
                                     Contact us today
                                 </p>
                                 <div className="services-details__contact-btn-box">

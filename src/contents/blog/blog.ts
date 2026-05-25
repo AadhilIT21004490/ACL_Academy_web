@@ -73,8 +73,8 @@ export const courses: BlogPost[] = [
     tags: ["Ai", "★", "Ai Agents"],
     title: "RICS APC Full Training",
     description:
-      "Discover how AI is transforming quantity surveying with our practical courses. Learn cost management, project delivery, and commercial processes based on real projects.",
-    link: "/inner/ai-qs",
+      "Accelerate your path to chartership. Our RICS Full Training Course delivers a complete, structured breakdown of core competencies and professional ethics. Get the exhaustive guidance and expert mentorship needed to successfully achieve MRICS status.",
+    link: "/inner/rics-full",
   },
 ];
 
