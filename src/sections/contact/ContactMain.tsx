@@ -54,7 +54,6 @@ const ContactMain: React.FC = () => {
     name: "",
     email: "",
     course: "",
-    subject: "",
     message: "",
   });
 
@@ -71,7 +70,6 @@ const ContactMain: React.FC = () => {
       `*Name:* ${form.name}`,
       `*Email:* ${form.email}`,
       `*Course:* ${form.course || "Not specified"}`,
-      `*Subject:* ${form.subject}`,
       `*Message:*\n${form.message}`,
     ].join("\n");
 
@@ -116,7 +114,7 @@ const ContactMain: React.FC = () => {
                   <div className="contact-page__contact-form-title-icon">
                     <Image src={contactIcon} width={24} height={20} alt="Contact Icon" />
                   </div>
-                  <h3 className="contact-page__contact-form-title">Send Us Message</h3>
+                  <h3 className="contact-page__contact-form-title">Need more help? Just send us a message.</h3>
                 </div>
 
                 <form
@@ -184,24 +182,6 @@ const ContactMain: React.FC = () => {
                           </select>
                           <div />
                         </div>
-                      </div>
-                    </div>
-
-
-                    {/* Subject */}
-                    <div className="col-xl-12">
-                      <div className="contact-page__input-box">
-                        <div className="contact-page__input-icon">
-                          <span className="icon-resume"></span>
-                        </div>
-                        <input
-                          type="text"
-                          name="subject"
-                          placeholder="Subject"
-                          value={form.subject}
-                          onChange={handleChange}
-                          required
-                        />
                       </div>
                     </div>
 
