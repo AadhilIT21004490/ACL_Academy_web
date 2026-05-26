@@ -146,7 +146,7 @@ const MobileNav: React.FC = () => {
                         <li><Link onClick={closeMobileState} href="/#">Home</Link></li>
 
 
-                        <li><Link onClick={closeMobileState} href="/about">About</Link></li>
+                        <li><Link onClick={closeMobileState} href="/inner/about">About</Link></li>
 
                         {/* --- MOBILE MENU PAGES LINKS HIDDEN --- */}
 
